@@ -43,7 +43,7 @@ header {
 }
 
 .nav-bar-logo img {
-  width: 10rem;
+  aspect-ratio: auto;
   height: 2.75rem;
 }
 

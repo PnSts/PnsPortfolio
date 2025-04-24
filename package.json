@@ -1,11 +1,12 @@
 {
-  "name": "myPortfolio",
+  "name": "PnsPortfolio",
   "version": "0.1.0",
-  "homepage": "https://pnsts.github.io/MyPortfolio",
+  "homepage": "https://pnsts.github.io/PnsPortfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@fontsource/courier-prime": "^5.2.5",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
@@ -26,11 +27,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git"
+    "url": "git+https://github.com/PnSts/PnsPortfolio.git"
   },
   "author": "Pranay Gupta",
   "bugs": {
-    "url": "https://github.com/thepranaygupta/react-tailwind-css-starter-pack/issues"
+    "url": "https://github.com/PnSts/PnsPortfolio/issues"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -60,9 +61,9 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.2.7",
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
-    "gh-pages": "^6.3.0"
+    "tailwindcss": "^3.2.7"
   }
 }

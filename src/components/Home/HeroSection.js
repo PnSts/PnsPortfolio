@@ -1,58 +1,50 @@
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
-import logoImage from "../../assets/logos/logo_alpha.png";
-import heroimage from"../../assets/restauranfood.jpg";
+import logoImage from "../../assets/logos/logo_vertical_lg_alpha.png";
+import heroimage from "../../assets/dev_image.jpg";
 
 
 const HeroSection = () => {
   return (
-    <section className="hero-back">
-      <div className="hero">
-        <div className="container grid">
-          <div className="hero-information">
-          <HashLink className="hero-logo" to="/#home">
-            <img src={logoImage} alt="Panos Tsoukalas logo" />
-          </HashLink>
-            {/* <h1>Little Lemon</h1>
-            <h2>Chicago</h2> */}
-            <p>
-            I' m focused on building reliable and scalable solutions.
-            With a strong foundation in modern technologies and a passion for clean, maintainable code, I help bring digital ideas to life. 
-            Here you'll find a showcase of my work, skills, and the values that drive my approach to software development.
-            </p>
-            {/* <HashLink className="button-primary" to="/reservations">
-              Reserve a table
-            </HashLink> */}
-          </div>
-        </div>
-      </div>
-
+    <section className="w-full mx-auto flex flex-col justify-center items-center h-screen relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="bg-white relative w-full max-w-4xl mx-auto h-96 flex items-stretch overflow-hidden rounded-2xl shadow-lg"
+        className="relative w-[80%] mx-auto h-full m-8 mb-56 flex overflow-hidden items-stretch rounded-2xl shadow-black shadow-lg"
       >
+        {/* Text Side */}
+        <div className="w-1/2 p-16 flex flex-col justify-center">
+          <div className="hero-information p-12">
+            <HashLink className="aspect-auto w-[40rem]" to="/#home">
+              <img src={logoImage} alt="Panos Tsoukalas logo" />
+            </HashLink>
+            <p className="font-courier f-color-second mt-64 text-xl">
+              {/* Hi! I' m a developer focused on building reliable and scalable solutions.
+                With a strong foundation in modern technologies and a passion for clean, maintainable code, I help bring digital ideas to life.
+                <br/><br/> */}
+              Here you'll find a showcase of my work, skills and the values that drive my approach to software development
+              <span className="animate-blink f-color-second">_</span>
+            </p>
 
+            <HashLink className="button-primary" to="/#contact">
+              Contact with me...
+            </HashLink>
+          </div>
+        </div>
+        {/* Diagonal Line */}
+        <div className="absolute top-[-15px] left-1/2 w-[3px] bg-cyan-500 bg-color-second transform -translate-x-1/2 -rotate-[-9deg] z-20 h-[110%]" />
+        <div className="absolute top-[-15px] left-1/2 w-[3px] bg-cyan-500 bg-color-second transform -translate-x-1/2 -rotate-[-12deg] z-20 h-[110%]" />
         {/* Image Side */}
-        <div className="w-1/2 relative overflow-visible shadow-lg diagonal-shadow ">
+        <div className="w-1/2 relative overflow-visible">
           <div
-            className="absolute inset-0 bg-cover bg-center shadow-lg"
-            style={{ backgroundImage: `url(${heroimage})`, clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)" }}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${heroimage})`, clipPath: "polygon(15% 0, 100% 0%, 100% 100%, 0% 100%)" }}
           />
         </div>
-
-        {/* Text Side */}
-        <div className="w-1/2 p-8 flex flex-col justify-center">
-          <h2 className="text-2xl font-bold mb-4">Modern Layout</h2>
-          <p className="text-gray-600">
-            Now with a smooth fade-in animation using Framer Motion!
-          </p>
-        </div>
-
       </motion.div>
     </section>
-    
+
   );
 };
 export default HeroSection;

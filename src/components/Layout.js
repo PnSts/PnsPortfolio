@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
     {
       name: "CONTACT",
       path: "/#contact",
-      hashLink: false,
+      hashLink: true,
     },
   ];
 
