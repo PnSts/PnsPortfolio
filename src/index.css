@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 :root {
+    --color-primary: white;
     --color-second: #69c7c3;
 }
