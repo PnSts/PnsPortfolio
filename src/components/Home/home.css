@@ -1,23 +1,18 @@
 /*Hero*/
-.diagonal-shadow::after {
-  content: "";
+.diagonal-shadow::before {
+  /* content: "";
   position: absolute;
   inset: 0;
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-  box-shadow: 12px 0 24px rgba(0, 0, 0, 0.25); /* adjust this */
-  z-index: -1;
-}
-
-.hero-back {
-  height: auto;
+  clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+  box-shadow: 12px 0 24px #69C7C3;
+  z-index: -1; */
 }
 
 .hero {
-  padding-top: 1.875rem;
-  /* background-color: #495e57; */
+  /* padding-top: 1.875rem;
   height: 90%;
   grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
+  gap: 3.5rem; */
 
 }
 
@@ -28,39 +23,14 @@
 
 .hero-information {
   grid-column: 1;
-  width: 80%;
-}
-
-.hero-information h1 {
-  color: #f4ce14;
-  font-size: 3.5rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
-}
-
-.hero-information h2 {
-  color: #ffffff;
-  font-size: 2.25rem;
-  height: 2.25rem;
-  line-height: 2.25rem;
-}
-
-.hero-information p {
-  margin-top: 1.5rem;
-  color: #ffffff;
-  font-size: 1.125rem;
+  /* width: 80%; */
 }
 
 .hero-information .button-primary {
   display: inline-block;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-top: 4rem;
 }
 
-.hero-logo img {
-  width: 40rem;
-  aspect-ratio: auto;
-}
 .hero-photo {
   grid-column: 2;
   width: 24rem;

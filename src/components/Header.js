@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logoImage from "../assets/logos/logo_horizontal_lg_alpha.png";
 import "./header.css";
 import { Link } from "react-router-dom";
 
@@ -32,9 +33,9 @@ const Header = ({ navLinks }) => {
   return (
     <header>
       <nav className="container grid nav-bar">
-        {/* <HashLink className="nav-bar-logo" to="/#home">
+        <HashLink className="nav-bar-logo" to="/#home">
           <img src={logoImage} alt="Little Lemon logo"/>
-        </HashLink> */}
+        </HashLink>
         <button
           className="nav-bar-hamburger"
           type="button"

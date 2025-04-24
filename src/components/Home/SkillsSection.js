@@ -32,7 +32,7 @@ const reviewers = [
 ];
 
 
-const TestimonialsSection = () => {
+const SkillsSection = () => {
   return (
     <section className="testimonials">
       <div className="container grid">
@@ -44,4 +44,4 @@ const TestimonialsSection = () => {
     </section>
   );
 };
-export default TestimonialsSection;
+export default SkillsSection;

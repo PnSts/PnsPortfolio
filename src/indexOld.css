@@ -1,4 +1,3 @@
-
 *,
 *:after,
 *:before {
@@ -19,12 +18,22 @@ body {
   font-family: Karla, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: rgb(83, 83, 214);
+  color: white;
   background: #536976;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #1b1b1b, #4a4a4a);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1b1b1b, #4a4a4a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
+
+
+.f-color-second {
+  color: var(--color-second);
+}
+
+.bg-color-second {
+  opacity: 1;
+  background-color: var(--color-second);
+}
+
 
 header {
   position: fixed;
@@ -37,13 +46,13 @@ header {
 }
 
 main {
-  padding-top: 6.25rem;
+  padding-top: 5.15rem;
   min-height: calc(100vh - 6.25rem - 18rem);
 }
 
 a {
   text-decoration: none;
-  color: #69c7c3;
+  color: var(--color-second);
 }
 
 h1,
@@ -111,22 +120,19 @@ img {
   margin: 0 auto;
 }
 
-.grid {
-  display: grid;
-}
 
 .button-primary {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 2rem;
-  background-color: #f4ce14;
-  color: black;
+  background-color: black;
+  color: white;
   font-weight: bold;
 }
 
 .button-primary:hover,
 .button-primary:focus {
-  background-color: black;
-  color: #ffffff;
+  background-color: var(--color-second);
+  color: black;
   border: 0rem;
 }
 
