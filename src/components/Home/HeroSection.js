@@ -6,12 +6,12 @@ import heroimage from "../../assets/dev_image.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="w-full mx-auto flex flex-col justify-center items-center h-screen relative overflow-hidden">
+    <section className="w-full mx-auto flex flex-col justify-center items-center h-auto relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative w-[80%] mx-auto h-full m-8 mb-56 flex overflow-hidden items-stretch rounded-2xl shadow-black shadow-lg"
+        className="relative w-[80%] mx-auto h-full m-8 flex overflow-hidden items-stretch rounded-2xl shadow-black shadow-lg"
       >
         {/* Text Side */}
         <div className="w-1/2 p-16 flex flex-col justify-center">

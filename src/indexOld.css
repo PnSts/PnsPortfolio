@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: Karla, sans-serif;
+  font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--color-primary);
@@ -53,14 +53,6 @@ main {
 a {
   text-decoration: none;
   color: var(--color-second);
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1;
-  font-family: "Markazi Text";
-  font-weight: normal;
 }
 
 h1 {

@@ -210,7 +210,6 @@
 
 .testimonials {
   padding: 2rem 0;
-  background-color: #495E57;
 }
 
 .testimonials .container {
@@ -224,7 +223,6 @@
   grid-column: 2 / 4;
   text-align: center;
   grid-row: 1;
-  color: #f4ce14;
 }
 
 @media (max-width: 949px) {

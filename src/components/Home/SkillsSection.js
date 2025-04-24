@@ -36,7 +36,8 @@ const SkillsSection = () => {
   return (
     <section className="testimonials">
       <div className="container grid">
-        <h2>Testimonials</h2>
+        <h1>SKILLS</h1>
+        <img className="w-14 aspect-auto" alt="Git" title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
         {reviewers.map((reviewer, index) => (
           <TestimonialCard key={index} reviewer={reviewer} />
         ))}
