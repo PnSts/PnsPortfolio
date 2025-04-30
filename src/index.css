@@ -6,3 +6,10 @@
     --color-primary: white;
     --color-second: #69c7c3;
 }
+
+@font-face {
+    font-family: 'ABFlockText-Bold';
+    src: url('./assets/fonts/ABFlockText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }

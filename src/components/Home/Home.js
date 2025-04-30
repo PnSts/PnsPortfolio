@@ -1,4 +1,4 @@
-import HeroSection from "./HeroSection";
+import PersonasSection from "./PersonasSection";
 import ProjectsSection from "./ProjectsSection";
 import SkillsSection from "./SkillsSection";
 import AboutSection from "./AboutSection";
@@ -7,7 +7,7 @@ import "./home.css";
 const Home = () => {
   return (
     <>
-      <HeroSection />
+      <PersonasSection />
       <SkillsSection />
       <ProjectsSection />
      {/*  <AboutSection /> */}

@@ -1,66 +1,26 @@
-/*Hero*/
-.diagonal-shadow::before {
-  /* content: "";
-  position: absolute;
-  inset: 0;
-  clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
-  box-shadow: 12px 0 24px #69C7C3;
-  z-index: -1; */
+/*PersonasSection*/
+@media (max-width: 1024px) {
+  .personas-img {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%) !important;
+  }
 }
 
-.hero {
-  /* padding-top: 1.875rem;
-  height: 90%;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem; */
 
-}
-
-.container {
+/* .container {
   width: 90%;
   justify-self: center;
+} */
+/*PersonasSection*/
+.titles{
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-second));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.hero-information {
-  grid-column: 1;
-  /* width: 80%; */
+.skill {
+  /* background: linear-gradient(to top, #4a4a4a, gray, #4a4a4a); */
+  
 }
-
-.hero-information .button-primary {
-  display: inline-block;
-  margin-top: 4rem;
-}
-
-.hero-photo {
-  grid-column: 2;
-  width: 24rem;
-  height: 24rem;
-  margin-bottom: -4.375rem;
-  justify-self: end;
-  border-radius: 1rem;
-  object-fit: cover;
-}
-
-@media (max-width: 792px) {
-  .hero {
-    height: 45rem;
-  }
-
-  .hero .hero-sub {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-
-  .hero-information {
-    grid-row: 1;
-  }
-
-  .hero-photo {
-    grid-column: 1;
-    grid-row: 2;
-  }
-}
-
 
 /*Specials*/
 .week-specials {
@@ -68,6 +28,7 @@
   grid-template-rows: auto auto;
   gap: 1.25rem;
   padding: 8rem 0 4rem;
+  position:absolute;
 }
 
 .week-specials-header {
@@ -206,7 +167,7 @@
   }
 }
 
-/*Testimonials*/
+/* Testimonials
 
 .testimonials {
   padding: 2rem 0;
@@ -324,7 +285,7 @@
     grid-column: auto;
     grid-row: auto;
   }
-}
+} */
 
 /*About*/
 

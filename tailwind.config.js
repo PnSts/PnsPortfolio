@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        courier: ['"Courier Prime"', 'monospace'],
+        courier: ['Courier Prime', 'monospace'],
+        abflocktext: ['ABFlockText-Bold', 'sans-serif'],
       },
       keyframes: {
         blink: {
