@@ -12,7 +12,7 @@ const Header = ({ navLinks }) => {
 
   const headerRef = useRef(null);
   const [lastScrollY, setLastScrollY] = useState(0);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       if (!headerRef.current) return;
@@ -29,15 +29,18 @@ const Header = ({ navLinks }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  
+
   return (
-    <header>
+    <header className="fixed top-0 left-0 w-full h-max z-[999] bg-black 
+            border-b-2 border-solid border-[var(--color-second)] rounded-b-3xl 
+            transition-transform duration-300 ease-in-out" 
+            ref={headerRef}>
       <nav className="container grid nav-bar">
         <HashLink className="nav-bar-logo" to="/#home">
-          <img src={logoImage} alt="Little Lemon logo"/>
+          <img src={logoImage} alt="Little Lemon logo" />
         </HashLink>
         <button
-          className="nav-bar-hamburger"
+          className="nav-bar-hamburger border-none cursor-pointer"
           type="button"
           aria-label="On Click"
           onClick={() => setIsNavExpanded(!isNavExpanded)}
@@ -68,7 +71,7 @@ const Header = ({ navLinks }) => {
         </ul>
       </nav>
     </header>
- 
+
   );
 };
 export default Header;

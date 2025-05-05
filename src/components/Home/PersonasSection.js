@@ -6,7 +6,7 @@ import personasimage from "../../assets/dev_image.jpg";
 
 const PersonasSection = () => {
   return (
-    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden">
+    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden" id="home">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}

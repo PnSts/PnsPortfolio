@@ -1,48 +1,16 @@
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--color-primary);
-  background: #536976;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1b1b1b, #4a4a4a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1b1b1b, #4a4a4a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 
-.f-color-second {
-  color: var(--color-second);
-}
 
-.bg-color-second {
-  opacity: 1;
-  background-color: var(--color-second);
-}
 
 
 header {
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: max-content;
   background-color: black;
-  z-index: 999;
+  z-index: 999; */
 }
 
 main {
@@ -50,22 +18,6 @@ main {
   min-height: calc(100vh - 6.25rem - 18rem);
 }
 
-a {
-  text-decoration: none;
-  color: var(--color-second);
-}
-
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
 
 label {
   width: fit-content;
@@ -97,14 +49,6 @@ select:focus {
 }
 
 
-button {
-  border: none;
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-}
 
 .container {
   max-width: 95.75rem;
@@ -113,20 +57,7 @@ img {
 }
 
 
-.button-primary {
-  padding: 0.5rem 1.5rem;
-  border-radius: 2rem;
-  background-color: black;
-  color: var(--color-primary);
-  font-weight: bold;
-}
 
-.button-primary:hover,
-.button-primary:focus {
-  background-color: var(--color-second);
-  color: black;
-  border: 0rem;
-}
 
 /*NotFound*/
 .page-not-found {
