@@ -19,7 +19,7 @@ const CardItem = ({ item }) => {
   };
 
   return (
-    <article className="h-[450px] rounded-lg bg-gradient-to-t from-[#383838] to-[#1b1b1b] border-[var(--color-second)] border-2 border-solid  overflow-hidden 
+    <article className="h-[450px] rounded-lg bg-gradient-to-tr from-[#383838] to-[#1b1b1b] border-[var(--color-second)] border-2 border-solid  overflow-hidden 
                 shadow-[0_0_10px_var(--color-second)] group hover:shadow-[0_0_25px_var(--color-second)] transition-shadow duration-300 ease-in-out">
       <div className="h-1/2 overflow-hidden">
         <img
