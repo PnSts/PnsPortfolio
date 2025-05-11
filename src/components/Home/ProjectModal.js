@@ -31,24 +31,39 @@ const ProjectModal = ({ isOpen, onClose, proj }) => {
         </button>
 
         {/* Carousel */}
-        <div className="relative w-full h-96 mb-4 ">
+        <div className="relative w-full h-96 mb-4">
           <img
             src={proj.images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
-            className="w-[90%] h-full  relative place-self-center rounded-md transition-all duration-600 ease-in-out"
+            className="w-[90%] h-full relative place-self-center rounded-md transition-all duration-600 ease-in-out"
           />
+
+          {/* Left Button */}
           <button
             onClick={prevSlide}
             className="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 text-2xl text-white hover:text-[var(--color-second)] transition-all"
           >
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
+
+          {/* Right Button */}
           <button
             onClick={nextSlide}
             className="absolute top-1/2 right-2 transform -translate-y-1/2 p-2 text-2xl text-white hover:text-[var(--color-second)] transition-all"
           >
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
+
+          {/* Dots for Image Navigation */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            {proj.images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-3 h-3 rounded-full shadow-sm shadow-black ${currentIndex === index ? 'bg-[var(--color-second)]' : 'bg-white'} transition-all`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Text content */}
@@ -56,7 +71,7 @@ const ProjectModal = ({ isOpen, onClose, proj }) => {
           <h3 className="h-full text-left text-xl font-bold italic">
             Overview
           </h3>
-          <p className="text-justify">{proj.description}</p>
+          <p className=" text-lg text-justify">{proj.description}</p>
 
           <h3 className="h-full text-left text-xl font-bold italic pt-2">
             Stack
@@ -66,7 +81,7 @@ const ProjectModal = ({ isOpen, onClose, proj }) => {
               <div key={name} className="flex items-center justify-center">
                 {src !== "" ? (
                   <img
-                    className="w-10 h-10 flex items-center justify-center"
+                    className="w-auto h-10 max-w-[90px] max-h-auto flex items-center justify-center"
                     src={src}
                     alt={name}
                     title={name}

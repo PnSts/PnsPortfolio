@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header navLinks={navLinks} />
+      <Header navLinks={navLinks}/>
       <main id="home">{children}</main>
       <Footer navLinks={navLinks} />
     </>

@@ -25,7 +25,8 @@ import reservations7 from "../../assets/images/projects/TableReservation/reserva
 import heli1 from "../../assets/images/projects/HeliTechApp/heli_1.png";
 import CardItem from "./CardItem";
 import javaswing from "../../assets/skills/java-icon.png";
-import apachepoi from "../../assets/skills/apache_poi.png";
+import apachepoi from "../../assets/skills/Apache_POI-Logo.wine.png";
+import eclipselink from "../../assets/skills/eclipselink-logo.png";
 import api from "../../assets/skills/api.png";
 
 const projects = [
@@ -33,16 +34,16 @@ const projects = [
     name: "Portfolio",
     frontImage: mps1,
     gitHubUrl: "https://github.com/PnSts/PnsPortfolio",
-    info: "Software/Web Developer Portfolio.",
-    description: `Responsive website of a hypothetical Master's Degree Program with user roles (Administration, Professors, Students) for users/students/courses/grades management. For DB used phpMyAdmin and WampServer.`,
-      images: [ mps1, mps2, mps3, mps4, mps5, mps6, mps7, mps8, mps9, mps10 ],
+    info: "this.portfolio",
+    description: `A responsive and mobile-friendly website that highlights my skills and expertise in web development, built using modern web technologies. 
+    It delivers a smooth, engaging user experience while showcasing my ability to create functional, accessible, and visually appealing websites.`,
+    images: [ mps1, mps2, mps3, mps4, mps5, mps6, mps7, mps8, mps9, mps10 ],
     stack:[
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
       { name: "CSS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
       { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
-      { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },    
       { name: "TailwindCSS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
-      { name: "JSON", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" },
+      { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
     ],
     demo: "",
   },
@@ -50,8 +51,11 @@ const projects = [
     name: "TableReservation",
     frontImage: reservations1,
     gitHubUrl: "https://github.com/PnSts/TableReservation",
-    info: "Website of a hypothetical Master's Degree Program.",
-    description: `Figma..............Responsive website of a hypothetical Master's Degree Program with user roles (Administration, Professors, Students) for users/students/courses/grades management. For DB used phpMyAdmin and WampServer.`,
+    info: "Restaurant Website with Reservation System (Full Design & Development)",
+    description: `Restaurant Website with Table Reservation System, designed and developed entirely by me. 
+    I created the UI/UX in Figma (wireframes, prototypes) and handled the front-end development to ensure a responsive, mobile-friendly experience. 
+    The system features a user-friendly table reservation tool and a smooth, intuitive design focused on performance, accessibility, and seamless 
+    device adaptability—while reflecting the restaurant’s brand and user needs.`,
       images: [ reservations1, reservations2, reservations3, reservations4, reservations5, reservations6, reservations7 ], 
     stack:[
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -68,13 +72,14 @@ const projects = [
     name: "HeliTechApp",
     frontImage: heli1,
     gitHubUrl: "https://github.com/PnSts/HeliTechApp",
-    info: "Website of a hypothetical Master's Degree Program.",
-    description: `Responsive website of a hypothetical Master's Degree Program with user roles (Administration, Professors, Students) for users/students/courses/grades management. For DB used phpMyAdmin and WampServer.`,
+    info: "Fleet, Maintenance & Monitoring System (Full Stack Development)",
+    description: `Helicopter Fleet Management Application developed as a full-stack solution for organizations to monitor and manage operational and maintenance data. 
+    The system supports maintenance quality control, tracks key technical and operational metrics, and includes a notification system for critical updates.`,
       images: [ heli1 ],
     stack:[
       { name: "Java Swing", src: javaswing },
+      { name: "EclipseLink JPA", src: eclipselink },
       { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
-      { name: "EclipseLink JPA", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" },
       { name: "Apache Poi", src: apachepoi },
     ],
     demo: "",
@@ -83,8 +88,10 @@ const projects = [
     name: "Website_MPS",
     frontImage: mps1,
     gitHubUrl: "https://github.com/PnSts/Website_MPS",
-    info: "Website of a hypothetical Master's Degree Program.",
-    description: `Responsive website of a hypothetical Master's Degree Program with user roles (Administration, Professors, Students) for users/students/courses/grades management. For DB used phpMyAdmin and WampServer.`,
+    info: "Master's Degree Program Management with Role-Based Access (Full Stack Development)",
+    description: `Responsive web application simulating a Master's Degree Program management system. 
+    Features distinct user roles—Administrator, Professor, and Student—with functionality for managing users, courses, grades, and student data. 
+    Built with PHP and MySQL, using phpMyAdmin for database management and WampServer as the local development environment.`,
       images: [ mps1, mps2, mps3, mps4, mps5, mps6, mps7, mps8, mps9, mps10 ],
     stack:[
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -99,16 +106,16 @@ const projects = [
     name: "Econometrica",
     frontImage: econometrica3,
     gitHubUrl: "https://github.com/PnSts/Econometrica",
-    info: "Selected country's Gross Domestic Product – GDP and Oil Consumption data.",
-    description: `Application that provides data on the Gross Domestic Product (GDP) of countries and oil consumption through an API, 
-    displaying this information along with its statistical analysis. 
-    Additionally, it offers the capability to store data for selected countries.
-    This application was created by a team of three members for a university project. The other two team members handled the analysis and design of the database, as well as the documentation of the application. I was responsible for developing the code for the functionality and the user interface (UI).`,
+    info: "Selected country's GDP & Oil Consumption Data",
+    description: `Economic Data Visualization Web Application displaying GDP and oil consumption statistics for various countries via an external API. 
+    Includes basic statistical analysis and allows users to store data for selected countries. 
+    Developed as part of a three-member university project team—I was responsible for implementing the application functionality and user interface (UI), 
+    while the other team members handled database design and project documentation.`,
     images: [ econometrica1, econometrica2, econometrica3],
     stack:[
       { name: "Java Swing", src: javaswing },
+      { name: "Apache DerbyDB", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg" },
       { name: "APIs \(SOAP - REST\)", src: api },
-      { name: "Apache Derby", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg" },
     ],
     demo: "",
   },
@@ -116,14 +123,15 @@ const projects = [
     name: "SphyWeb",
     frontImage: sphy1,
     gitHubUrl: "https://github.com/PnSts/SphyWeb",
-    info: "Website of a hypothetical Master's Degree Program.",
-    description: `JSP..................hypothetical Master's Degree Program with user roles (Administration, Professors, Students) for users/students/courses/grades management. For DB used phpMyAdmin and WampServer.`,
-      images: [ sphy1, sphy2, sphy3 ],
+    info: "Student Management System with Role-Based Access",
+    description: `School Student Management Web Application, developed as part of academic coursework. The system supports role-based access control across various user roles and departments. 
+    Created by a team of four, with my primary responsibility focused on user interface (UI) development. Built using JavaServer Pages (JSP).`,
+    images: [ sphy1, sphy2, sphy3 ],
     stack:[
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
       { name: "CSS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
+      { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
       { name: "Java", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
-      { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },    
       { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
       { name: "Apache Tomcat", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg" },
     ],
@@ -133,10 +141,10 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden" id="projects">
+    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden py-8" id="projects">
       <div className="w-[80%] text-center h-fit max-lg:h-auto mx-auto m-8">
          <div className="w-fit place-self-center">
-          <h1 className="titles text-4xl text-center font-bold mb-10">
+          <h1 className="titles text-5xl text-left font-bold mb-20">
             {"PROJECTS"}
           </h1>
          </div>

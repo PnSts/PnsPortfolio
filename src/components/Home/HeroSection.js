@@ -4,9 +4,9 @@ import logoImage from "../../assets/logos/logo_vertical_lg_alpha.png";
 import personasimage from "../../assets/dev_image.jpg";
 
 
-const PersonasSection = () => {
+const HeroSection = () => {
   return (
-    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden" id="home">
+    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden py-8" id="home">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}
@@ -38,7 +38,7 @@ const PersonasSection = () => {
         {/* Image Side */}
         <div className="w-1/2 max-lg:w-full max-lg:h-[40rem] relative overflow-visible max-lg:overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center personas-img"
+            className="absolute inset-0 bg-cover bg-center hero-img"
             style={{ backgroundImage: `url(${personasimage})`, 
               clipPath: "polygon(15% 0, 100% 0%, 100% 100%, 0% 100%)" }}
           />
@@ -47,4 +47,4 @@ const PersonasSection = () => {
     </section>
   );
 };
-export default PersonasSection;
+export default HeroSection;

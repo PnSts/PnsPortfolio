@@ -1,7 +1,8 @@
-import PersonasSection from "./PersonasSection";
+import HeroSection from "./HeroSection";
 import ProjectsSection from "./ProjectsSection";
 import SkillsSection from "./SkillsSection";
-import AboutSection from "./AboutSection";
+import AboutMeSection from "./AboutMeSection";
+import ContactMeSection from "./ContactMeSection";
 import "./home.css";
 import primefaces from "../../assets/skills/primefaces-icon.png";
 import javaswing from "../../assets/skills/java-icon.png";
@@ -12,10 +13,12 @@ import jaspersoft from "../../assets/skills/jaspersoft.png";
 const Home = () => {
   return (
     <>
-      <PersonasSection />
+      <HeroSection />
+      <AboutMeSection />
       <SkillsSection />
       <ProjectsSection />
-     {/*  <AboutSection /> */}
+     
+      {/* <ContactMeSection /> */}
     </>
   );
 };

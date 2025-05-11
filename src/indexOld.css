@@ -1,18 +1,4 @@
 
-
-
-
-
-header {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: max-content;
-  background-color: black;
-  z-index: 999; */
-}
-
 main {
   padding-top: 5.15rem;
   min-height: calc(100vh - 6.25rem - 18rem);
