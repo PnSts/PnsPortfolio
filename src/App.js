@@ -1,23 +1,23 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home/Home";
-import { ModalProvider } from "./context/ModalContext";
+import { ProjectProvider } from "./context/ProjectContext";
+import ProjectReview from "./components/Project/ProjectReview";
 
 
 function App() {
+
   return (
-    <>
-      
-        <ModalProvider>
+    <>  
+          <ProjectProvider>
           <Layout>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
-              {/* <Route path="/project" element={<ReservationsHome />} /> */}
+              <Route path="/projectReview" element={<ProjectReview />} />
             </Routes>
           </Layout>
-        </ModalProvider>
-
+          </ProjectProvider>
     </>
   );
 }

@@ -25,14 +25,14 @@ const socials = [
 
 const AboutMeSection = () => {
   return (
-    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden py-8" id="aboutme">
+    <section className="w-full h-screen max-2xl:h-auto mx-auto my-4 justify-center items-center relative overflow-hidden py-16" id="aboutme">
       <div className="relative w-[80%] text-center h-fit max-lg:h-auto mx-auto m-8">
         <h1 className="titles text-5xl text-right font-bold">{"ABOUT"}</h1>
         <h1 className="titles text-5xl text-right font-bold mb-20">{"ME"}</h1>
 
         <div className="
-            relative w-2/3 h-auto bg-gradient-to-tr from-[#383838] to-[#1b1b1b] 
-            rounded-tl-[40%] rounded-tr-[2%] rounded-bl-[2%] rounded-br-[40%] shadow-[0_0_10px_black] p-32 text-white 
+            relative w-2/3 max-lg:w-full h-auto bg-gradient-to-tr from-[#383838] to-[#1b1b1b] 
+            rounded-tl-[40%] rounded-tr-[2%] rounded-bl-[2%] rounded-br-[40%] shadow-[0_0_10px_black] p-36 text-white 
             flex items-center justify-center text-center text-xl 
             transition-transform duration-300">
 
@@ -44,19 +44,18 @@ const AboutMeSection = () => {
             I’m driven by problem-solving, enhancing user experiences, and building reliable, scalable software solutions that bring ideas to life.
           </p>
         </div>
-        <nav className="absolute top-32 w-1/2 left-2/3 ml-10 flex-col gap-8">
 
-
+        <nav className="lg:absolute top-36 w-1/2 max-md:w-full left-2/3 ml-10 max-lg:ml-16 flex-col gap-8">
           {socials.map((social, index) => (
-            <li key={index} className="relative w-20 h-20 list-none flex justify-center items-center mt-8 rounded-full
+            <li key={index} className="relative w-20 h-20 max-lg:w-12 max-lg:h-12 list-none flex justify-center items-center translate-x-[-100%] translate-y-[50%] mt-8 rounded-full
                 bg-[var(--color-third)] border-[var(--color-second)] border-2 border-solid 
                 shadow-[0_0_10px_var(--color-second)] hover:shadow-[0_0_25px_var(--color-second)] 
-                group hover:scale-110 transition-all duration-300 overflow-visible z-10">
-              <a href={social.url} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={social.icon} size="3x" />
+                group hover:scale-110 transition-all duration-300 overflow-visible">
+              <a href={social.url} target="_blank" rel="noopener noreferrer" className="flex justify-center items-center w-full h-full">
+                <FontAwesomeIcon icon={social.icon} className="w-[50px] h-[50px] max-lg:w-[30px] max-lg:h-[30px]" />
               </a>
-              <span className="absolute left-2/3 ml-14 w-max font-courier text-[var(--color-second)] text-lg 
-                  scale-0 group-hover:scale-100 transition-transform ease-in-out duration-300
+              <span className="absolute left-2/3 ml-14 max-sm:ml-8 w-max font-courier text-[var(--color-second)] text-lg max-2xl:text-md max-xl:text-sm max-lg:text-lg max-sm:text-sm
+                  scale-0 max-lg:scale-100 group-hover:scale-100 transition-transform ease-in-out duration-300
                   origin-left z-0 whitespace-nowrap">{social.text}</span>
             </li>
 

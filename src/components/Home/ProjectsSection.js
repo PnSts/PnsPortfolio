@@ -1,4 +1,3 @@
-import { HashLink } from "react-router-hash-link";
 import econometrica1 from "../../assets/images/projects/Econometrica/1.jpg";
 import econometrica2 from "../../assets/images/projects/Econometrica/2.jpg";
 import econometrica3 from "../../assets/images/projects/Econometrica/3.jpg";
@@ -22,11 +21,30 @@ import reservations4 from "../../assets/images/projects/TableReservation/reserva
 import reservations5 from "../../assets/images/projects/TableReservation/reservations_5.jpg";
 import reservations6 from "../../assets/images/projects/TableReservation/reservations_6.jpg";
 import reservations7 from "../../assets/images/projects/TableReservation/reservations_7.jpg";
-import heli1 from "../../assets/images/projects/HeliTechApp/heli_1.png";
+import heli1 from "../../assets/images/projects/HeliTechApp/helitech_1.jpg";
+import heli2 from "../../assets/images/projects/HeliTechApp/helitech_2.jpg";
+import heli3 from "../../assets/images/projects/HeliTechApp/helitech_3.jpg";
+import heli4 from "../../assets/images/projects/HeliTechApp/helitech_4.jpg";
+import heli5 from "../../assets/images/projects/HeliTechApp/helitech_5.jpg";
+import heli6 from "../../assets/images/projects/HeliTechApp/helitech_6.jpg";
+import heli7 from "../../assets/images/projects/HeliTechApp/helitech_7.jpg";
+import heli8 from "../../assets/images/projects/HeliTechApp/helitech_8.jpg";
+import heli9 from "../../assets/images/projects/HeliTechApp/helitech_9.jpg";
+import heli10 from "../../assets/images/projects/HeliTechApp/helitech_10.jpg";
+import heli11 from "../../assets/images/projects/HeliTechApp/helitech_11.jpg";
+import heli12 from "../../assets/images/projects/HeliTechApp/helitech_12.jpg";
+import heli13 from "../../assets/images/projects/HeliTechApp/helitech_13.jpg";
+import heli14 from "../../assets/images/projects/HeliTechApp/helitech_14.jpg";
+import heli15 from "../../assets/images/projects/HeliTechApp/helitech_15.jpg";
+import heli16 from "../../assets/images/projects/HeliTechApp/helitech_16.jpg";
+import heli17 from "../../assets/images/projects/HeliTechApp/helitech_17.jpg";
+import heli18 from "../../assets/images/projects/HeliTechApp/helitech_18.jpg";
+import heli19 from "../../assets/images/projects/HeliTechApp/helitech_19.jpg";
+import heli20 from "../../assets/images/projects/HeliTechApp/helitech_20.jpg";
 import CardItem from "./CardItem";
 import javaswing from "../../assets/skills/java-icon.png";
 import apachepoi from "../../assets/skills/Apache_POI-Logo.wine.png";
-import eclipselink from "../../assets/skills/eclipselink-logo.png";
+import eclipselink from "../../assets/skills/eclipselink-logo1.png";
 import api from "../../assets/skills/api.png";
 
 const projects = [
@@ -74,8 +92,10 @@ const projects = [
     gitHubUrl: "https://github.com/PnSts/HeliTechApp",
     info: "Fleet, Maintenance & Monitoring System (Full Stack Development)",
     description: `Helicopter Fleet Management Application developed as a full-stack solution for organizations to monitor and manage operational and maintenance data. 
-    The system supports maintenance quality control, tracks key technical and operational metrics, and includes a notification system for critical updates.`,
-      images: [ heli1 ],
+    The system supports maintenance quality control, tracks key technical and operational metrics, and includes a notification system for critical updates. 
+    The application is being used by an organization, since 2024`,
+      images: [ heli1, heli2, heli3, heli4, heli5, heli6, heli7, heli8, heli9, heli10, 
+        heli11, heli12, heli13, heli14, heli15, heli16, heli17, heli18, heli19, heli20 ],
     stack:[
       { name: "Java Swing", src: javaswing },
       { name: "EclipseLink JPA", src: eclipselink },
@@ -141,14 +161,14 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden py-8" id="projects">
+    <section className="w-full h-auto mx-auto justify-center items-center relative overflow-hidden py-10" id="projects">
       <div className="w-[80%] text-center h-fit max-lg:h-auto mx-auto m-8">
          <div className="w-fit place-self-center">
           <h1 className="titles text-5xl text-left font-bold mb-20">
             {"PROJECTS"}
           </h1>
          </div>
-         <div className="grid grid-cols-3 gap-8 max-lg:grid-cols-1 max-lg:gap-8">
+         <div className="grid grid-cols-3 grid-flow-row max-lg:grid-cols-1 max-2xl:grid-cols-2 gap-10">
           {projects.map((project, index) => (
             <CardItem key={index} item={project} />
           ))}

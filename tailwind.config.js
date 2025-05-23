@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       fontFamily: {
         courier: ['Courier Prime', 'monospace'],
-        abflocktext: ['ABFlockText-Bold', 'sans-serif'],
       },
       keyframes: {
         blink: {

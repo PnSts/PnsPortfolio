@@ -10,26 +10,28 @@ const Layout = ({ children }) => {
       hashLink: true,
     },
     {
-      name: "PROJECTS",
-      path: "/#projects",
-      hashLink: true,
-    },
-    {
       name: "ABOUT ME",
       path: "/#aboutme",
       hashLink: true,
     },
     {
-      name: "CONTACT",
-      path: "/#contact",
+      name: "MY SKILLS",
+      path: "/#skills",
+      hashLink: true,
+    },
+    {
+      name: "PROJECTS",
+      path: "/#projects",
       hashLink: true,
     },
   ];
 
   return (
     <>
-      <Header navLinks={navLinks}/>
-      <main id="home">{children}</main>
+      <Header navLinks={navLinks} />
+      <main id="home">
+        {children}
+      </main>
       <Footer navLinks={navLinks} />
     </>
   );

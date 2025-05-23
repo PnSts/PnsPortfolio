@@ -1,0 +1,129 @@
+import React, { useState, useEffect } from 'react';
+import { HashLink } from "react-router-hash-link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight, faChevronLeft, faPlay } from "@fortawesome/free-solid-svg-icons";
+
+import { useProj } from "../../context/ProjectContext";
+
+const ProjectReview = () => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, []);
+
+  const { proj } = useProj();
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? proj.images.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === proj.images.length - 1 ? 0 : prev + 1));
+  };
+
+  return (
+    <section className="w-full h-auto mx-auto justify-center items-center relative pt-28 pb-10" id="top">
+      <div className="w-[70%] text-center justify-center h-auto mx-auto relative">
+        {/* Title */}
+        <div className="w-[90%] mx-auto text-left flex flex-row flex-grow justify-between items-center gap-6 text-2xl font-bold pb-4">
+          <div className="flex flex-row gap-x-8 items-center justify-center">
+            <h2 className="">
+              {proj.name}
+            </h2>
+            <a
+              href={proj.gitHubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-4xl devicon-github-original hover:text-[var(--color-second)] transition-all"
+            ></a>
+            {proj.demo == "" ? ("") : (
+              <a
+                href={proj.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-primary text-base"
+              >
+                <FontAwesomeIcon icon={faPlay} /> Demo
+              </a>)
+            }
+          </div>
+          <div className="flex flex-row gap-x-1 items-center justify-center ">
+            <HashLink
+              className="button-primary text-lg mr-4"
+              to="/home#projects"
+              scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+              Back
+            </HashLink>
+            {/* Left Button */}
+            <button
+              onClick={prevSlide}
+              className="button-primary mx-auto w-11 h-11 rounded-full text-lg flex items-center justify-center"
+            >
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+
+            {/* Right Button */}
+            <button
+              onClick={nextSlide}
+              className="button-primary mx-auto w-11 h-11 rounded-full text-lg flex items-center justify-center"
+            >
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
+          </div>
+        </div>
+
+        {/* Carousel */}
+        <div className="relative w-full h-auto my-6 mx-auto">
+          <img
+            src={proj.images[currentIndex]}
+            alt={`Slide ${currentIndex + 1}`}
+            className="w-[90%] h-auto relative place-self-center rounded-xl transition-all drop-shadow-[0_0_10px_black] duration-600 ease-in-out"
+          />
+
+          {/* Dots for Image Navigation */}
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-6 flex flex-wrap space-x-2">
+            {proj.images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-3 h-3 rounded-full shadow-sm shadow-black ${currentIndex === index ? 'bg-[var(--color-second)]' : 'bg-white'} transition-all`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Text content */}
+        <div className="w-[80%] mx-auto py-2 h-auto flex flex-col flex-grow justify-between gap-y-6 ">
+          <h3 className="h-full text-left text-2xl font-bold italic">
+            Overview
+          </h3>
+          <p className=" text-lg text-justify pb-2">{proj.description}</p>
+
+          <h3 className="h-full text-left text-2xl font-bold italic pt-2">
+            Tech Stack
+          </h3>
+          <div className="flex flex-wrap gap-6 mb-4">
+            {proj.stack.map(({ name, src }) => (
+              <div key={name} className="flex items-center justify-center">
+                {src !== "" ? (
+                  <img
+                    className="w-auto h-10 max-w-[90px] max-h-auto flex items-center justify-center"
+                    src={src}
+                    alt={name}
+                    title={name}
+                  />
+                ) : (
+                  <div className="center justify-center font-arial text-sm font-bold">{name}</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* </div> */}
+    </section>
+  );
+};
+
+export default ProjectReview;

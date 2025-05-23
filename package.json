@@ -1,7 +1,7 @@
 {
   "name": "PnsPortfolio",
   "version": "0.1.0",
-  "homepage": "https://pnsts.github.io/PnsPortfolio",
+  "homepage": "https://pnsts.github.io/PnsPortfolio/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -30,7 +30,7 @@
     "type": "git",
     "url": "git+https://github.com/PnSts/PnsPortfolio.git"
   },
-  "author": "Pranay Gupta",
+  "author": "Panos Tsoukalas",
   "bugs": {
     "url": "https://github.com/PnSts/PnsPortfolio/issues"
   },

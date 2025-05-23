@@ -22,15 +22,6 @@
   transform-origin: bottom left;
 }
 
-.nav-bar {
-  width: 90%;
-  max-width: none;
-  padding: 0 6%;
-  align-items: center;
-  grid-template-columns: auto auto auto;
-  height: 5rem;
-}
-
 .nav-bar-logo {
   grid-column: 1;
   justify-self: start;
@@ -110,7 +101,8 @@
   }
 
   .nav-bar-links.expanded li:hover {
-    background-color: #ebebeb;
+    background-color: var(--color-second);
+    color: black;
   }
 
   .nav-bar-links {
@@ -118,10 +110,10 @@
     flex-direction: column;
     width: 75%;
     max-width: 16rem;
-    height: 100vh;
-    top: 0;
+    height: auto;
+    top: 5.25rem;
     left: -75%;
-    background-color: #ffffff;
+    background-color: black;
     z-index: 100;
   }
 
