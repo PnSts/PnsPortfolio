@@ -1,14 +1,6 @@
 import { HashLink } from "react-router-hash-link";
-import { useProj } from "../../context/ProjectContext";
 
-
-const CardItem = ({ item }) => {
-  
-  const { setProj } = useProj() != null ? useProj() :  setProj(item) ;
-  
-const handleProject = () => {
-  setProj(item);
-}
+const CardItem = ({ item, index }) => {
 
   return (
     <article className="flex flex-col rounded-lg bg-gradient-to-t from-[#383838] to-[#1b1b1b] 
@@ -17,7 +9,6 @@ const handleProject = () => {
                 transition-shadow duration-300 ease-in-out">
       <div className="h-60 overflow-hidden">
         <img
-          // className="object-cover w-full h-full group-hover:scale-110 transition-all duration-300"
           className="top-0 left-0 min-w-full min-h-full overflow-hidden group-hover:scale-110 transition-all ease-linear duration-300"
           src={item.frontImage}
           alt={item.name}
@@ -33,30 +24,14 @@ const handleProject = () => {
               className="text-2xl devicon-github-original hover:text-[var(--color-second)] transition-all ease-linear duration-300"
               to={item.gitHubUrl} target="_blank"
             ></HashLink>
-            {/* <HashLink
+
+            <HashLink
+              to={`/projectReview/${index}#top`}
+              scroll={el => { window.scrollTo({ top: 0 }); el.scrollIntoView({ behavior: 'instant', block: 'start' }) }}
+              onClick={() => { handleProject(); }}
               className="button-primary transition-all ease-linear duration-300"
-              to="/projectReview#top"
-              onClick={() => {handleProject()}}
-            > */}
-              <HashLink
-  to="/projectReview#top"
-  scroll={el => {
-    // Prevent automatic scroll when navigating
-    // We'll handle scroll manually below if needed
-    window.scrollTo({ top: 0 }); el.scrollIntoView({ behavior: 'instant', block: 'start' }) // keeps position
-  }}
-  onClick={() => {
-    handleProject(); // set context
-  }}
-  className="button-primary transition-all ease-linear duration-300"
->
-              Explore</HashLink>
-            {/* <button
-              className="button-primary"
-              onClick={() => {setModalOpen(true), handleOpen()}}
             >
-              Explore
-            </button> */}
+              Explore</HashLink>
           </div>
         </div>
 
@@ -85,12 +60,6 @@ const handleProject = () => {
         </div>
 
       </div>
-
-      {/* <ProjectModal
-        isOpen={isOpen}
-        onClose={() => {setIsOpen(false), handleClose()}}
-        proj={item}
-      /> */}
     </article>
   );
 };

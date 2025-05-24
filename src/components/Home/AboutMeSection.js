@@ -25,10 +25,10 @@ const socials = [
 
 const AboutMeSection = () => {
   return (
-    <section className="w-full h-screen max-2xl:h-auto mx-auto my-4 justify-center items-center relative overflow-hidden py-16" id="aboutme">
+    <section className="w-full h-screen min-h-fit max-2xl:h-auto mx-auto my-4 justify-center items-center relative overflow-hidden py-12" id="aboutme">
       <div className="relative w-[80%] text-center h-fit max-lg:h-auto mx-auto m-8">
-        <h1 className="titles text-5xl text-right font-bold">{"ABOUT"}</h1>
-        <h1 className="titles text-5xl text-right font-bold mb-20">{"ME"}</h1>
+        <h1 className="titles text-5xl text-right font-bold">{"WHO"}</h1>
+        <h1 className="titles text-5xl text-right font-bold mb-10">{"AM I"}</h1>
 
         <div className="
             relative w-2/3 max-lg:w-full h-auto bg-gradient-to-tr from-[#383838] to-[#1b1b1b] 
@@ -41,8 +41,11 @@ const AboutMeSection = () => {
             <span className="font-courier text-[var(--color-second)] text-2xl">Software/Web Developer based in <FontAwesomeIcon icon={faLocationDot} className="pb-1" size="lg" /> Greece </span><br /><br />
             I’m a disciplined and detail-oriented Full Stack Developer with a Bachelor of Science in Computer Science and certified teaching competence in Informatics.
             My expertise spans both front-end and back-end technologies, and I have practical knowledge in modern development practices.
-            I’m driven by problem-solving, enhancing user experiences, and building reliable, scalable software solutions that bring ideas to life.
+            I’m driven by problem-solving, enhancing user experiences, and building reliable, scalable software solutions that bring ideas to life.<br /><br />
+            I am looking for new opportunities to apply my skills and contribute to innovative projects.
+          
           </p>
+
         </div>
 
         <nav className="lg:absolute top-36 w-1/2 max-md:w-full left-2/3 ml-10 max-lg:ml-16 flex-col gap-8">

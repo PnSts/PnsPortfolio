@@ -6,7 +6,7 @@ import personasimage from "../../assets/dev_image.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-screen max-xl:h-auto mx-auto justify-center items-center relative overflow-hidden py-14" id="home">
+    <section className="w-full h-screen max-xl:h-auto mx-auto justify-center items-center relative overflow-hidden py-16" id="home">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}
@@ -22,14 +22,11 @@ const HeroSection = () => {
               <h1 className="w-full font-mono text-[var(--color-second)] text-4xl text-center">SOFTWARE/WEB DEVELOPER</h1>
             </HashLink>
             <p className="font-courier text-[var(--color-second)] mt-64 max-lg:mt-32 text-xl">
-              {/* Hi! I' m a developer focused on building reliable and scalable solutions.
-                With a strong foundation in modern technologies and a passion for clean, maintainable code, I help bring digital ideas to life.
-                <br/><br/> */}
               Here you'll find a showcase of my work, skills and the values that drive my approach to software and web development
               <span className="animate-blink text-[var(--color-second)]">_</span>
             </p>
 
-            <HashLink className="button-primary mt-16 inline-block" to="/#contact">
+            <HashLink className="button-primary mt-16 inline-block" to="/#aboutme">
               Contact with me...
             </HashLink>
           </div>

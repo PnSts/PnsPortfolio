@@ -2,17 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft, faPlay } from "@fortawesome/free-solid-svg-icons";
-
+import { useParams } from "react-router-dom";
 import { useProj } from "../../context/ProjectContext";
 
 const ProjectReview = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
 
-  const { proj } = useProj();
+  const { index } = useParams();
+  const { projects } = useProj();
+  const proj = projects[parseInt(index)];
 
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? proj.images.length - 1 : prev - 1));
@@ -22,11 +24,12 @@ const ProjectReview = () => {
     setCurrentIndex((prev) => (prev === proj.images.length - 1 ? 0 : prev + 1));
   };
 
+
   return (
     <section className="w-full h-auto mx-auto justify-center items-center relative pt-28 pb-10" id="top">
-      <div className="w-[70%] text-center justify-center h-auto mx-auto relative">
+      <div className="w-[60%] max-xl:w-[80%] text-center justify-center h-auto mx-auto relative">
         {/* Title */}
-        <div className="w-[90%] mx-auto text-left flex flex-row flex-grow justify-between items-center gap-6 text-2xl font-bold pb-4">
+        <div className="w-full mx-auto text-left flex flex-row flex-grow justify-between items-center gap-6 text-2xl font-bold pb-4">
           <div className="flex flex-row gap-x-8 items-center justify-center">
             <h2 className="">
               {proj.name}
@@ -48,41 +51,25 @@ const ProjectReview = () => {
               </a>)
             }
           </div>
-          <div className="flex flex-row gap-x-1 items-center justify-center ">
-            <HashLink
-              className="button-primary text-lg mr-4"
-              to="/home#projects"
-              scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
-              Back
-            </HashLink>
-            {/* Left Button */}
-            <button
-              onClick={prevSlide}
-              className="button-primary mx-auto w-11 h-11 rounded-full text-lg flex items-center justify-center"
-            >
-              <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
-
-            {/* Right Button */}
-            <button
-              onClick={nextSlide}
-              className="button-primary mx-auto w-11 h-11 rounded-full text-lg flex items-center justify-center"
-            >
-              <FontAwesomeIcon icon={faChevronRight} />
-            </button>
-          </div>
+          <HashLink
+            className="button-primary text-lg"
+            to="/home#projects"
+            scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+            Back
+          </HashLink>
         </div>
 
-        {/* Carousel */}
-        <div className="relative w-full h-auto my-6 mx-auto">
-          <img
-            src={proj.images[currentIndex]}
-            alt={`Slide ${currentIndex + 1}`}
-            className="w-[90%] h-auto relative place-self-center rounded-xl transition-all drop-shadow-[0_0_10px_black] duration-600 ease-in-out"
-          />
+        <div className="w-full mx-auto flex flex-row flex-grow justify-between gap-x-1 items-center">
+          {/* Left Button */}
+          <button
+            onClick={prevSlide}
+            className="button-primary w-7 h-7 rounded-full text-lg flex items-center justify-center"
+          >
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
 
           {/* Dots for Image Navigation */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-6 flex flex-wrap space-x-2">
+          <div className="flex flex-wrap space-x-2 justify-center">
             {proj.images.map((_, index) => (
               <button
                 key={index}
@@ -91,10 +78,27 @@ const ProjectReview = () => {
               />
             ))}
           </div>
+
+          {/* Right Button */}
+          <button
+            onClick={nextSlide}
+            className="button-primary w-7 h-7 rounded-full text-lg flex items-center justify-center"
+          >
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+        </div>
+
+        {/* Carousel */}
+        <div className="relative w-full h-auto mt-2 mb-6 mx-auto">
+          <img
+            src={proj.images[currentIndex]}
+            alt={`Slide ${currentIndex + 1}`}
+            className="w-full h-auto relative place-self-center rounded-xl transition-all drop-shadow-[0_0_10px_black] duration-600 ease-in-out"
+          />
         </div>
 
         {/* Text content */}
-        <div className="w-[80%] mx-auto py-2 h-auto flex flex-col flex-grow justify-between gap-y-6 ">
+        <div className="w-[90%] mx-auto py-2 h-auto flex flex-col flex-grow justify-between gap-y-6 ">
           <h3 className="h-full text-left text-2xl font-bold italic">
             Overview
           </h3>

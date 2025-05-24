@@ -5,12 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logoImage from "../assets/logos/logo_horizontal_lg_alpha.png";
 import "./header.css";
 import { Link } from "react-router-dom";
-// import { useModal } from "../context/ModalContext";
 
 
 const Header = ({ navLinks }) => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  // const { modalOpen } = useModal();
   const headerRef = useRef(null);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -28,20 +26,12 @@ const Header = ({ navLinks }) => {
       }
     };
 
-    // if (modalOpen) {
-    //   document.body.style.overflow = 'hidden'; // Disable scroll
-    // } else {
-    //   document.body.style.overflow = 'auto'; // Re-enable scroll
-    // }
     window.addEventListener("scroll", handleScroll);
     return () => {
       document.body.style.overflow = 'auto';
       window.removeEventListener("scroll", handleScroll);
-      
     };
 
-
-    // return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
 
