@@ -14,12 +14,12 @@ const socials = [
   {
     icon: faGithub,
     url: "https://github.com/PnSts",
-    text: "github.com/PnSts"
+    text: "PnSts"
   },
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/panagiotis-tsoukalas",
-    text: "www.linkedin.com/in/panagiotis-tsoukalas",
+    text: "panagiotis-tsoukalas",
   },
 ];
 
@@ -32,13 +32,14 @@ const AboutMeSection = () => {
 
         <div className="
             relative w-2/3 max-lg:w-full h-auto bg-gradient-to-tr from-[#383838] to-[#1b1b1b] 
-            rounded-tl-[40%] rounded-tr-[2%] rounded-bl-[2%] rounded-br-[40%] shadow-[0_0_10px_black] p-36 text-white 
+            rounded-tl-[40%] max-lg:rounded-tl-[20%] rounded-tr-[2%] rounded-bl-[2%] rounded-br-[40%] max-lg:rounded-br-[20%] shadow-[0_0_10px_black] 
+            p-36 max-lg:p-16 max-sm:px-8 max-sm:py-16 text-white 
             flex items-center justify-center text-center text-xl 
             transition-transform duration-300">
 
-          <p className="text-xl text-justify">
+          <p className="text-xl max-sm:text-lg text-justify">
             Hello, I'm Panos Tsoukalas! <br />
-            <span className="font-courier text-[var(--color-second)] text-2xl">Software/Web Developer based in <FontAwesomeIcon icon={faLocationDot} className="pb-1" size="lg" /> Greece </span><br /><br />
+            <span className="font-courier text-[var(--color-second)] text-2xl max-sm:text-xl">Software/Web Developer based in <FontAwesomeIcon icon={faLocationDot} className="pb-1" size="lg" /> Greece </span><br /><br />
             I’m a disciplined and detail-oriented Full Stack Developer with a Bachelor of Science in Computer Science and certified teaching competence in Informatics.
             My expertise spans both front-end and back-end technologies, and I have practical knowledge in modern development practices.
             I’m driven by problem-solving, enhancing user experiences, and building reliable, scalable software solutions that bring ideas to life.<br /><br />

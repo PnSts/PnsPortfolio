@@ -9,7 +9,7 @@ const SkillsSection = () => {
   }, []);
 
   return (
-    <section className="w-full h-screen max-xl:h-auto mx-auto justify-center items-center relative overflow-hidden py-12" id="skills">
+    <section className="w-full h-screen min-h-fit max-xl:h-auto mx-auto justify-center items-center relative overflow-hidden py-12" id="skills">
       <div className="relative w-[80%] text-center h-fit max-lg:h-auto mx-auto m-8">
 
         <h1 className="titles text-5xl text-left font-bold">{"MY"}</h1>

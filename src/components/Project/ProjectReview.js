@@ -29,7 +29,7 @@ const ProjectReview = () => {
     <section className="w-full h-auto mx-auto justify-center items-center relative pt-28 pb-10" id="top">
       <div className="w-[60%] max-xl:w-[80%] text-center justify-center h-auto mx-auto relative">
         {/* Title */}
-        <div className="w-full mx-auto text-left flex flex-row flex-grow justify-between items-center gap-6 text-2xl font-bold pb-4">
+        <div className="w-full mx-auto text-left flex flex-row flex-grow flex-wrap justify-between items-center gap-6 text-2xl font-bold pb-4">
           <div className="flex flex-row gap-x-8 items-center justify-center">
             <h2 className="">
               {proj.name}

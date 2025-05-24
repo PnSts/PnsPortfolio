@@ -7,7 +7,7 @@ const CardItem = ({ item, index }) => {
     border-[var(--color-second)] border-[1px] border-solid overflow-hidden 
                 shadow-[0_0_5px_var(--color-second)] group hover:shadow-[0_0_15px_var(--color-second)] 
                 transition-shadow duration-300 ease-in-out">
-      <div className="h-60 overflow-hidden">
+      <div className="h-60 max-sm:h-40 overflow-hidden">
         <img
           className="top-0 left-0 min-w-full min-h-full overflow-hidden group-hover:scale-110 transition-all ease-linear duration-300"
           src={item.frontImage}

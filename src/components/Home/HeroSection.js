@@ -15,13 +15,13 @@ const HeroSection = () => {
         // rounded-3xl shadow-black shadow-xl"
       >
         {/* Text Side */}
-        <div className="w-1/2 max-lg:w-full p-16 flex flex-col justify-center">
+        <div className="w-1/2 max-lg:w-full p-16 max-lg:px-4 max-lg:py-16 flex flex-col justify-center">
           <div>
             <HashLink className="aspect-auto w-[30rem]" to="/#home">
               <img src={logoImage} alt="Panos Tsoukalas logo" />
               <h1 className="w-full font-mono text-[var(--color-second)] text-4xl text-center">SOFTWARE/WEB DEVELOPER</h1>
             </HashLink>
-            <p className="font-courier text-[var(--color-second)] mt-64 max-lg:mt-32 text-xl">
+            <p className="font-courier text-[var(--color-second)] mt-64 max-lg:mt-24 text-xl">
               Here you'll find a showcase of my work, skills and the values that drive my approach to software and web development
               <span className="animate-blink text-[var(--color-second)]">_</span>
             </p>
