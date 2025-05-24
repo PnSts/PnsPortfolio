@@ -31,7 +31,7 @@ const ProjectReview = () => {
         {/* Title */}
         <div className="w-full mx-auto text-left flex flex-row flex-grow max-sm:flex-col-reverse flex-wrap justify-between 
                         items-center max-sm:items-start gap-6 text-2xl font-bold pb-8">
-          <div className="flex flex-row flex-wrap gap-x-8 gap-y-2 items-center justify-center">
+          <div className="max-sm:w-full flex flex-row flex-wrap gap-x-8 gap-y-2 items-center justify-center">
             <h2 className="">
               {proj.name}
             </h2>
@@ -70,7 +70,7 @@ const ProjectReview = () => {
           </button>
 
           {/* Dots for Image Navigation */}
-          <div className="flex flex-wrap space-x-2 justify-center">
+          <div className="flex flex-wrap space-x-2 gap-y-1 justify-center">
             {proj.images.map((_, index) => (
               <button
                 key={index}
