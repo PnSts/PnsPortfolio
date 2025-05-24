@@ -48,7 +48,7 @@ const AboutMeSection = () => {
 
         </div>
 
-        <nav className="lg:absolute top-36 w-1/2 max-md:w-full left-2/3 ml-10 max-lg:ml-16 flex-col gap-8">
+        <nav className="lg:absolute top-36 w-1/2 max-md:w-full left-2/3 ml-10 max-lg:ml-16 flex-col gap-8" id="contact">
           {socials.map((social, index) => (
             <li key={index} className="relative w-20 h-20 max-lg:w-12 max-lg:h-12 list-none flex justify-center items-center translate-x-[-100%] translate-y-[50%] mt-8 rounded-full
                 bg-[var(--color-third)] border-[var(--color-second)] border-2 border-solid 

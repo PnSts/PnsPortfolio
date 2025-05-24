@@ -12,7 +12,7 @@ const HeroSection = () => {
         animate={{ opacity: 2, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="relative w-[80%] h-full max-lg:h-auto mx-auto m-8 flex flex-row max-lg:flex-col overflow-hidden max-lg:overflow-none "
-        // rounded-3xl shadow-black shadow-xl"
+      // rounded-3xl shadow-black shadow-xl"
       >
         {/* Text Side */}
         <div className="w-1/2 max-lg:w-full p-16 max-lg:px-4 max-lg:py-16 flex flex-col justify-center">
@@ -25,10 +25,12 @@ const HeroSection = () => {
               Here you'll find a showcase of my work, skills and the values that drive my approach to software and web development
               <span className="animate-blink text-[var(--color-second)]">_</span>
             </p>
+            <div className="w-full max-sm:flex max-sm:justify-center max-sm:items-center max-sm:mx-auto">
+              <HashLink className="button-primary mt-16 inline-block" to="/#contact">
+                Contact with me...
+              </HashLink>
+            </div>
 
-            <HashLink className="button-primary mt-16 inline-block" to="/#aboutme">
-              Contact with me...
-            </HashLink>
           </div>
         </div>
         {/* Diagonal Line */}
@@ -38,8 +40,10 @@ const HeroSection = () => {
         <div className="w-1/2 max-lg:w-full max-lg:h-[40rem] relative overflow-visible max-lg:overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center hero-img rounded-tr-full rounded-br-full"
-            style={{ backgroundImage: `url(${personasimage})`, 
-              clipPath: "polygon(15% 0, 100% 0%, 100% 100%, 0% 100%)" }}
+            style={{
+              backgroundImage: `url(${personasimage})`,
+              clipPath: "polygon(15% 0, 100% 0%, 100% 100%, 0% 100%)"
+            }}
           />
         </div>
       </motion.div>
