@@ -39,7 +39,7 @@ const AboutMeSection = () => {
 
           <p className="text-xl max-sm:text-lg text-justify">
             Hello, I'm Panos Tsoukalas! <br />
-            <span className="font-courier text-[var(--color-second)] text-2xl max-sm:text-xl">Software/Web Developer based in <FontAwesomeIcon icon={faLocationDot} className="pb-1" size="lg" /> Greece </span><br /><br />
+            <span className="font-courier text-[var(--color-second)] mt-4 text-2xl max-sm:text-xl">Software/Web Developer based in <FontAwesomeIcon icon={faLocationDot} className="pb-1" size="lg" /> Greece </span><br /><br />
             I’m a disciplined and detail-oriented Full Stack Developer with a Bachelor of Science in Computer Science and certified teaching competence in Informatics.
             My expertise spans both front-end and back-end technologies, and I have practical knowledge in modern development practices.
             I’m driven by problem-solving, enhancing user experiences, and building reliable, scalable software solutions that bring ideas to life.<br /><br />

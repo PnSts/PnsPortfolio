@@ -1,7 +1,7 @@
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import logoImage from "../../assets/logos/logo_vertical_lg_alpha2.png";
-import personasimage from "../../assets/dev_image4.png";
+import heroImage from "../../assets/dev_image4.png";
 
 
 const HeroSection = () => {
@@ -37,11 +37,11 @@ const HeroSection = () => {
         <div className="max-lg:hidden absolute top-[-15px] left-1/2 w-[3px] bg-[var(--color-second)] transform -translate-x-1/2 -rotate-[-9deg] z-20 h-[110%]" />
         <div className="max-lg:hidden absolute top-[-15px] left-1/2 w-[3px] bg-[var(--color-second)] transform -translate-x-1/2 -rotate-[-12deg] z-20 h-[110%]" />
         {/* Image Side */}
-        <div className="w-1/2 max-lg:w-full max-lg:h-[40rem] relative overflow-visible max-lg:overflow-hidden">
+        <div className="w-1/2 max-lg:w-full max-lg:h-[30rem] relative overflow-visible max-lg:overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center hero-img rounded-tr-full rounded-br-full"
             style={{
-              backgroundImage: `url(${personasimage})`,
+              backgroundImage: `url(${heroImage})`,
               clipPath: "polygon(15% 0, 100% 0%, 100% 100%, 0% 100%)"
             }}
           />
