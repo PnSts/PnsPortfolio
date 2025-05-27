@@ -6,22 +6,22 @@ const Layout = ({ children }) => {
   const navLinks = [
     {
       name: "HOME",
-      path: "#home",
+      path: "/#home",
       hashLink: true,
     },
     {
       name: "WHO AM I",
-      path: "#aboutme",
+      path: "/#aboutme",
       hashLink: true,
     },
     {
       name: "MY SKILLS",
-      path: "#skills",
+      path: "/#skills",
       hashLink: true,
     },
     {
       name: "PROJECTS",
-      path: "#projects",
+      path: "/#projects",
       hashLink: true,
     },
   ];

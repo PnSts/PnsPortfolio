@@ -41,6 +41,11 @@ import heli17 from "../assets/images/projects/HeliTechApp/helitech_17.jpg";
 import heli18 from "../assets/images/projects/HeliTechApp/helitech_18.jpg";
 import heli19 from "../assets/images/projects/HeliTechApp/helitech_19.jpg";
 import heli20 from "../assets/images/projects/HeliTechApp/helitech_20.jpg";
+import teaching1 from "../assets/images/projects/Microteaching/microteaching_1.jpg";
+import teaching2 from "../assets/images/projects/Microteaching/microteaching_2.jpg";
+import teaching3 from "../assets/images/projects/Microteaching/microteaching_3.jpg";
+import teaching4 from "../assets/images/projects/Microteaching/microteaching_4.jpg";
+import teaching5 from "../assets/images/projects/Microteaching/microteaching_5.jpg";
 import javaswing from "../assets/skills/java-icon.png";
 import apachepoi from "../assets/skills/Apache_POI-Logo.wine.png";
 import eclipselink from "../assets/skills/eclipselink-logo1.png";
@@ -108,7 +113,7 @@ const projects = [
     frontImage: mps1,
     gitHubUrl: "https://github.com/PnSts/Website_MPS",
     info: "Master's Degree Program Management with Role-Based Access (Full Stack Development)",
-    description: `Responsive web application simulating a Master's Degree Program management system. 
+    description: `Responsive web application simulating a Master's Degree Program management system as a course assignment. 
     Features distinct user roles—Administrator, Professor, and Student—with functionality for managing users, courses, grades, and student data. 
     Built with PHP and MySQL, using phpMyAdmin for database management and WampServer as the local development environment.`,
     images: [mps1, mps2, mps3, mps4, mps5, mps6, mps7, mps8, mps9, mps10],
@@ -119,6 +124,17 @@ const projects = [
       { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
       { name: "APIs \(SOAP - REST\)", src: api },
     ],
+    demo: "",
+  },
+  {
+    name: "Shopping List",
+    frontImage: teaching1,
+    gitHubUrl: "",
+    info: "Unplugged Microteaching and Bee-Bot Programming",
+    description: `Design and implementation of an educational Microteaching session for early childhood learners (ages 5–7) 
+    aimed at introducing basic programming concepts.`,
+    images: [teaching1, teaching2, teaching3, teaching4, teaching5],
+    stack: "",
     demo: "",
   },
   {

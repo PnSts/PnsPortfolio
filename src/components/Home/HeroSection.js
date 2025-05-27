@@ -1,17 +1,17 @@
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import logoImage from "../../assets/logos/logo_vertical_lg_alpha2.png";
-import personasimage from "../../assets/dev_image.jpg";
+import personasimage from "../../assets/dev_image4.png";
 
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-screen max-xl:h-auto mx-auto justify-center items-center relative overflow-hidden py-16" id="home">
+    <section className="w-full h-screen max-xl:h-auto mx-auto flex justify-center items-center relative overflow-hidden pt-16" id="home">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative w-[80%] h-full max-lg:h-auto mx-auto m-8 flex flex-row max-lg:flex-col overflow-hidden max-lg:overflow-none "
+        className="relative w-[80%] h-[80%] max-lg:h-auto mx-auto my-auto m-8 flex flex-row max-lg:flex-col overflow-hidden max-lg:overflow-none "
       // rounded-3xl shadow-black shadow-xl"
       >
         {/* Text Side */}

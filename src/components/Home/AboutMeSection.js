@@ -43,7 +43,7 @@ const AboutMeSection = () => {
             I’m a disciplined and detail-oriented Full Stack Developer with a Bachelor of Science in Computer Science and certified teaching competence in Informatics.
             My expertise spans both front-end and back-end technologies, and I have practical knowledge in modern development practices.
             I’m driven by problem-solving, enhancing user experiences, and building reliable, scalable software solutions that bring ideas to life.<br /><br />
-            I am looking for new opportunities to apply my skills and contribute to innovative projects.
+            I am looking for new opportunities that will inspire me to contribute to innovative projects.
           </p>
 
         </div>

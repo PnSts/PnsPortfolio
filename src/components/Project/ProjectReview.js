@@ -35,12 +35,15 @@ const ProjectReview = () => {
             <h2 className="">
               {proj.name}
             </h2>
-            <a
-              href={proj.gitHubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-4xl devicon-github-original hover:text-[var(--color-second)] transition-all"
-            ></a>
+            {proj.gitHubUrl == "" ? ("") : (
+              <a
+                href={proj.gitHubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-4xl devicon-github-original hover:text-[var(--color-second)] transition-all"
+              ></a>)
+            }
+
             {proj.demo == "" ? ("") : (
               <a
                 href={proj.demo}
@@ -54,7 +57,7 @@ const ProjectReview = () => {
           </div>
           <HashLink
             className="button-primary text-lg"
-            to="/home#projects"
+            to={`/home/#${index}`}
             scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
             Back
           </HashLink>
@@ -105,25 +108,31 @@ const ProjectReview = () => {
           </h3>
           <p className=" text-lg text-justify pb-2">{proj.description}</p>
 
-          <h3 className="h-full text-left text-2xl font-bold italic pt-2">
-            Tech Stack
-          </h3>
-          <div className="flex flex-wrap gap-6 mb-4">
-            {proj.stack.map(({ name, src }) => (
-              <div key={name} className="flex items-center justify-center">
-                {src !== "" ? (
-                  <img
-                    className="w-auto h-10 max-w-[90px] max-h-auto flex items-center justify-center"
-                    src={src}
-                    alt={name}
-                    title={name}
-                  />
-                ) : (
-                  <div className="center justify-center font-arial text-sm font-bold">{name}</div>
-                )}
+
+          {proj.stack == "" ? ("") : (
+            <>
+              <h3 className="h-full text-left text-2xl font-bold italic pt-2">
+                Tech Stack
+              </h3>
+              <div className="flex flex-wrap gap-6 mb-4">
+                {proj.stack.map(({ name, src }) => (
+                  <div key={name} className="flex items-center justify-center">
+                    {src !== "" ? (
+                      <img
+                        className="w-auto h-10 max-w-[90px] max-h-auto flex items-center justify-center"
+                        src={src}
+                        alt={name}
+                        title={name}
+                      />
+                    ) : (
+                      <div className="center justify-center font-arial text-sm font-bold">{name}</div>
+                    )}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </>)
+          }
+
         </div>
       </div>
       {/* </div> */}
