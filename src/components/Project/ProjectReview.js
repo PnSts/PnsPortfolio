@@ -35,14 +35,14 @@ const ProjectReview = () => {
             <h2 className="">
               {proj.name}
             </h2>
-            {proj.gitHubUrl == "" ? ("") : (
+            {/* {proj.gitHubUrl == "" ? ("") : (
               <a
                 href={proj.gitHubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-4xl devicon-github-original hover:text-[var(--color-second)] transition-all"
               ></a>)
-            }
+            } */}
 
             {proj.demo == "" ? ("") : (
               <a

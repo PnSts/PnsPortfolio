@@ -10,7 +10,7 @@ function App() {
       <ProjectProvider>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/projectReview/:index" element={<ProjectReview />} />
           </Routes>

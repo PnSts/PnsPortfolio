@@ -41,11 +41,12 @@ import heli17 from "../assets/images/projects/HeliTechApp/helitech_17.jpg";
 import heli18 from "../assets/images/projects/HeliTechApp/helitech_18.jpg";
 import heli19 from "../assets/images/projects/HeliTechApp/helitech_19.jpg";
 import heli20 from "../assets/images/projects/HeliTechApp/helitech_20.jpg";
-import teaching1 from "../assets/images/projects/Microteaching/microteaching_1.jpg";
-import teaching2 from "../assets/images/projects/Microteaching/microteaching_2.jpg";
-import teaching3 from "../assets/images/projects/Microteaching/microteaching_3.jpg";
-import teaching4 from "../assets/images/projects/Microteaching/microteaching_4.jpg";
-import teaching5 from "../assets/images/projects/Microteaching/microteaching_5.jpg";
+import portfolio1 from "../assets/images/projects/PnsPortfolio/portfolio_1.jpg";
+// import teaching1 from "../assets/images/projects/Microteaching/microteaching_1.jpg";
+// import teaching2 from "../assets/images/projects/Microteaching/microteaching_2.jpg";
+// import teaching3 from "../assets/images/projects/Microteaching/microteaching_3.jpg";
+// import teaching4 from "../assets/images/projects/Microteaching/microteaching_4.jpg";
+// import teaching5 from "../assets/images/projects/Microteaching/microteaching_5.jpg";
 import javaswing from "../assets/skills/java-icon.png";
 import apachepoi from "../assets/skills/Apache_POI-Logo.wine.png";
 import eclipselink from "../assets/skills/eclipselink-logo1.png";
@@ -54,12 +55,12 @@ import api from "../assets/skills/api.png";
 const projects = [
   {
     name: "Portfolio",
-    frontImage: mps1,
+    frontImage: portfolio1,
     gitHubUrl: "https://github.com/PnSts/PnsPortfolio",
     info: "this.portfolio",
-    description: `A responsive and mobile-friendly website that highlights my skills and expertise in web development, built using modern web technologies. 
+    description: `A responsive and mobile-friendly website that highlights my skills and expertise in software/web development, built using modern web technologies. 
     It delivers a smooth, engaging user experience while showcasing my ability to create functional, accessible, and visually appealing websites.`,
-    images: [mps1, mps2, mps3, mps4, mps5, mps6, mps7, mps8, mps9, mps10],
+    images: [portfolio1],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
       { name: "CSS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
@@ -126,17 +127,17 @@ const projects = [
     ],
     demo: "",
   },
-  {
-    name: "Shopping List",
-    frontImage: teaching1,
-    gitHubUrl: "",
-    info: "Unplugged Microteaching and Bee-Bot Programming",
-    description: `Design and implementation of an educational Microteaching session for early childhood learners (ages 5–7) 
-    aimed at introducing basic programming concepts.`,
-    images: [teaching1, teaching2, teaching3, teaching4, teaching5],
-    stack: "",
-    demo: "",
-  },
+  // {
+  //   name: "Shopping List",
+  //   frontImage: teaching1,
+  //   gitHubUrl: "",
+  //   info: "Unplugged Microteaching and Bee-Bot Programming",
+  //   description: `Design and implementation of an educational Microteaching session for early childhood learners (ages 5–7) 
+  //   aimed at introducing basic programming concepts.`,
+  //   images: [teaching1, teaching2, teaching3, teaching4, teaching5],
+  //   stack: "",
+  //   demo: "",
+  // },
   {
     name: "Econometrica",
     frontImage: econometrica3,

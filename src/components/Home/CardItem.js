@@ -21,12 +21,12 @@ const CardItem = ({ item, index }) => {
             {item.name}
           </h2>
           <div className="flex flex-row gap-x-3 mt-1 items-center justify-center">
-            {item.gitHubUrl == "" ? ("") : (
+            {/* {item.gitHubUrl == "" ? ("") : (
               <HashLink
                 className="text-2xl devicon-github-original hover:text-[var(--color-second)] transition-all ease-linear duration-300"
                 to={item.gitHubUrl} target="_blank"
               ></HashLink>)
-            }
+            } */}
 
             <HashLink
               to={`/projectReview/${index}#top`}

@@ -1,7 +1,7 @@
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import logoImage from "../../assets/logos/logo_vertical_lg_alpha2.png";
-import heroImage from "../../assets/dev_image4.png";
+import heroImage from "../../assets/images/dev_image.png";
 
 
 const HeroSection = () => {
