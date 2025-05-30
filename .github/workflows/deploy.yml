@@ -3,7 +3,7 @@ name: Deploy React App to Public GitHub Pages Repo
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
