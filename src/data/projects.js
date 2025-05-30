@@ -69,7 +69,7 @@ const projects = [
       { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
       { name: "JSON", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" },
     ],
-    demo: "",
+    demo: "", 
   },
   {
     name: "TableReservation",
