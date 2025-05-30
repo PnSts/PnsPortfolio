@@ -23,7 +23,7 @@ const SkillsSection = () => {
                 <div className="flex flex-wrap gap-6 rounded-2xl bg-gradient-to-t from-[#383838] to-[#1b1b1b] overflow-hidden border-[var(--color-second)] border-[1px] border-solid py-4 px-8 shadow-[0_0_10px_black]">
                   {items.map(({ name, src }) => (
                     <div key={name}>
-                      {src != "" ? (
+                      {src !== "" ? (
                         <img className="w-auto h-9 max-w-[76px] max-h-auto flex items-center justify-center drop-shadow-[0_0_0px_var(--color-second)]" src={src} alt={name} title={name} />
                       ) : (
                         <div className="center justify-center font-arial text-sm font-bold" >{name}</div>

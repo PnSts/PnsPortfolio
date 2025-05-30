@@ -124,7 +124,7 @@ const projects = [
       { name: "CSS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
       { name: "PHP", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" },
       { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
-      { name: "APIs \(SOAP - REST\)", src: api },
+      { name: "APIs (SOAP - REST)", src: api },
     ],
     demo: "",
   },
@@ -152,7 +152,7 @@ const projects = [
     stack: [
       { name: "Java Swing", src: javaswing },
       { name: "Apache DerbyDB", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg" },
-      { name: "APIs \(SOAP - REST\)", src: api },
+      { name: "APIs (SOAP - REST)", src: api },
     ],
     demo: "",
   },

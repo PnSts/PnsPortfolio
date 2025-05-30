@@ -44,7 +44,7 @@ const ProjectReview = () => {
               ></a>)
             } */}
 
-            {proj.demo == "" ? ("") : (
+            {proj.demo === "" ? ("") : (
               <a
                 href={proj.demo}
                 target="_blank"
@@ -109,7 +109,7 @@ const ProjectReview = () => {
           <p className=" text-lg text-justify pb-2">{proj.description}</p>
 
 
-          {proj.stack == "" ? ("") : (
+          {proj.stack === "" ? ("") : (
             <>
               <h3 className="h-full text-left text-2xl font-bold italic pt-2">
                 Tech Stack

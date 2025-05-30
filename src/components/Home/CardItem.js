@@ -39,7 +39,7 @@ const CardItem = ({ item, index }) => {
 
         <p className="px-8 text-md text-justify w-full">{item.info}</p>
 <div className="px-8 mt-auto text-justify mb-4">
-        {item.stack == "" ? ("") : (
+        {item.stack === "" ? ("") : (
           <>
             <span className="text-lg text-left font-bold italic pb-4">
               Tech Stack:
