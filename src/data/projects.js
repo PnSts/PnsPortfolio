@@ -97,7 +97,7 @@ const projects = [
     frontImage: heli1,
     gitHubUrl: "https://github.com/PnSts/HeliTechApp",
     info: "Fleet, Maintenance & Monitoring System (Full Stack Development)",
-    description: 
+    description:
     "Full-stack solution for organizations to monitor and manage operational and maintenance data. " +
     "The system supports maintenance quality control, tracks key technical and operational metrics, and includes a notification system for critical updates.\n" +
     "Since 2024, the application has been implemented and remains in active use within an organization.\n\n" +
