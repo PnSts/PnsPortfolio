@@ -7,6 +7,16 @@ import { useProj } from "../../context/ProjectContext";
 
 const ProjectReview = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+const openFullscreen = (index) => {
+    setCurrentIndex(index);
+    setIsFullscreen(true);
+  };
+
+  const closeFullscreen = () => {
+    setIsFullscreen(false);
+  };
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
@@ -98,6 +108,7 @@ const ProjectReview = () => {
             src={proj.images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
             className="w-full h-auto relative place-self-center rounded-xl transition-all drop-shadow-[0_0_10px_black] duration-600 ease-in-out"
+            onClick={() => openFullscreen(currentIndex)}
           />
         </div>
 
@@ -106,7 +117,14 @@ const ProjectReview = () => {
           <h3 className="h-full text-left text-2xl font-bold italic">
             Overview
           </h3>
-          <p className=" text-lg text-justify pb-2">{proj.description}</p>
+          <p className=" text-lg text-justify pb-2">
+            {proj.description.split('\n').map((line, index) => (
+           <React.Fragment key={index}>      
+            {line} <br />
+           </React.Fragment>
+        ))}
+            {/* {proj.description} */}
+            </p>
 
 
           {proj.stack === "" ? ("") : (
@@ -136,6 +154,38 @@ const ProjectReview = () => {
         </div>
       </div>
       {/* </div> */}
+
+      {/* Fullscreen Modal */}
+      {isFullscreen && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
+          <button
+            onClick={closeFullscreen}
+            className="absolute top-4 right-4 text-white text-3xl font-bold"
+          >
+            ✕
+          </button>
+
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 text-white text-4xl font-bold"
+          >
+            ‹
+          </button>
+
+          <img
+            src={proj.images[currentIndex]}
+            alt={`Slide ${currentIndex + 1}`}
+            className="max-w-full max-h-full rounded-xl"
+          />
+
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 text-white text-4xl font-bold"
+          >
+            ›
+          </button>
+        </div>
+      )}
     </section>
   );
 };

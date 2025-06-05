@@ -6,22 +6,22 @@ import heroImage from "../../assets/images/dev_image.png";
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-screen max-xl:h-auto mx-auto flex justify-center items-center relative overflow-hidden pt-16" id="home">
+    <section className="w-full h-screen max-xl:h-auto mx-auto flex justify-center items-center relative overflow-hidden max-xl:pt-24 pt-16" id="home">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 2, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative w-[80%] h-[80%] max-lg:h-auto mx-auto my-auto m-8 flex flex-row max-lg:flex-col overflow-hidden max-lg:overflow-none "
+        className="relative w-[80%] h-[80%] max-lg:h-auto mx-auto my-auto flex flex-row max-lg:flex-col overflow-hidden max-lg:overflow-none "
       // rounded-3xl shadow-black shadow-xl"
       >
         {/* Text Side */}
-        <div className="w-1/2 max-lg:w-full p-16 max-lg:px-4 max-lg:py-16 flex flex-col justify-center">
-          <div>
-            <HashLink className="aspect-auto w-[30rem]" to="/#home">
-              <img src={logoImage} alt="Panos Tsoukalas logo" />
+        <div className="w-1/2 max-lg:w-full p-16 max-lg:px-4 max-lg:py-16 h-full">
+          <div className="h-full w-full flex flex-col flex-grow justify-between items-center">
+            <HashLink className="aspect-auto w-auto max-w-[30rem]" to="/#home">
+              <img src={logoImage} alt="Panos Tsoukalas logo" className=""/>
               <h1 className="w-full font-mono text-[var(--color-second)] text-4xl text-center">SOFTWARE/WEB DEVELOPER</h1>
             </HashLink>
-            <p className="font-courier text-[var(--color-second)] mt-64 max-lg:mt-24 text-xl">
+            <p className="font-courier text-[var(--color-second)] mt-24 text-xl">
               Here you'll find a showcase of my work, skills and the values that drive my approach to software and web development
               <span className="animate-blink text-[var(--color-second)]">_</span>
             </p>

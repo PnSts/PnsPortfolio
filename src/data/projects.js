@@ -58,8 +58,8 @@ const projects = [
     frontImage: portfolio1,
     gitHubUrl: "https://github.com/PnSts/PnsPortfolio",
     info: "this.portfolio",
-    description: `A responsive and mobile-friendly website that highlights my skills and expertise in software/web development, built using modern web technologies. 
-    It delivers a smooth, engaging user experience while showcasing my ability to create functional, accessible, and visually appealing websites.`,
+    description: `A responsive and mobile-friendly Website that highlights my skills and expertise in software/web development, built using modern web technologies. 
+    It delivers a smooth, engaging user experience while showcasing my ability to create functional, accessible and visually appealing websites.`,
     images: [portfolio1],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -76,10 +76,10 @@ const projects = [
     frontImage: reservations1,
     gitHubUrl: "https://github.com/PnSts/TableReservation",
     info: "Restaurant Website with Reservation System (Full Design & Development)",
-    description: `Restaurant Website with Table Reservation System, designed and developed entirely by me. 
+    description: `Restaurant Website with Table Reservation System, designed and developed entirely by me, as a course assignment. 
     I created the UI/UX in Figma (wireframes, prototypes) and handled the front-end development to ensure a responsive, mobile-friendly experience. 
-    The system features a user-friendly table reservation tool and a smooth, intuitive design focused on performance, accessibility, and seamless 
-    device adaptability—while reflecting the restaurant’s brand and user needs.`,
+    The system features a table reservation tool and a smooth, intuitive design focused on performance, accessibility and seamless 
+    device adaptability — while reflecting the restaurant’s brand and user needs.`,
     images: [reservations1, reservations2, reservations3, reservations4, reservations5, reservations6, reservations7],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -97,9 +97,27 @@ const projects = [
     frontImage: heli1,
     gitHubUrl: "https://github.com/PnSts/HeliTechApp",
     info: "Fleet, Maintenance & Monitoring System (Full Stack Development)",
-    description: `Helicopter Fleet Management Application developed as a full-stack solution for organizations to monitor and manage operational and maintenance data. 
-    The system supports maintenance quality control, tracks key technical and operational metrics, and includes a notification system for critical updates. 
-    Since 2024, the application has been implemented and remains in active use within an organization.`,
+    description: 
+    "Full-stack solution for organizations to monitor and manage operational and maintenance data. " +
+    "The system supports maintenance quality control, tracks key technical and operational metrics, and includes a notification system for critical updates.\n" +
+    "Since 2024, the application has been implemented and remains in active use within an organization.\n\n" +
+    "Features and functionality:\n" +
+    "•  Tabbed interface per Helicopter (all critical operational and maintenance-related information).\n" +
+    "•  Flight Hours monitoring.\n" +
+    "•  Scheduled preventive maintenance Inspections tracking (notification system integrated into the dashboard for upcoming or overdue inspections).\n" +
+    "•  Components and Parts management [operational data calculations (e.g., time since installation, time remaining), historical tracking of usage and status and dashboard alerts for part replacements based on thresholds or intervals].\n" +
+    "•  Historical records of component Installations and Removals, maintaining traceability.\n" +
+    "•  Operational data export functionality, generating structured files reporting.\n" +
+    "•  Hydraulic and Lubricating Fluid Sample management (logging of fluid samples sent for chemical analysis, export of analysis request forms to downloadable/generated files).\n" +
+    "•  Sample Analysis History tracking (search capabilities by helicopter or component).\n" +
+    "•  Spare Parts Inventory management (stock levels and storage location).\n" +
+    "•  Battery management (charging date tracking and dashboard notifications for upcoming recharging requirements).\n" +
+    "•  Tool management (calibration date tracking and recalibration alerts displayed in the dashboard).\n" +
+    "•  Compliance with manufacturer Technical Manuals monitoring, bulletins and revision updates.\n" +
+    "•  Application Configuration module for managing system-wide settings.\n" +
+    "•  User Authentication system (User Groups and Roles, with granular access rights).\n" +
+    "•  Logging of user actions to ensure traceability and accountability.\n" +
+    "•  Centralized Dashboard aggregating all notifications and displaying key operational insights for the entire helicopter fleet.\n",
     images: [heli1, heli2, heli3, heli4, heli5, heli6, heli7, heli8, heli9, heli10,
       heli11, heli12, heli13, heli14, heli15, heli16, heli17, heli18, heli19, heli20],
     stack: [
@@ -115,9 +133,9 @@ const projects = [
     frontImage: mps1,
     gitHubUrl: "https://github.com/PnSts/Website_MPS",
     info: "Master's Degree Program Management with Role-Based Access (Full Stack Development)",
-    description: `Responsive web application simulating a Master's Degree Program management system as a course assignment. 
-    Features distinct user roles—Administrator, Professor, and Student—with functionality for managing users, courses, grades, and student data. 
-    Built with PHP and MySQL, using phpMyAdmin for database management and WampServer as the local development environment.`,
+    description: `Responsive Web Application simulating a Master's Degree Program management system as a course assignment. 
+    Features distinct user roles — Administrator, Professor, and Student — with functionality for managing users, courses, grades, and student data. 
+    Built using phpMyAdmin for database management and WampServer as the local development environment.`,
     images: [mps1, mps2, mps3, mps4, mps5, mps6, mps7, mps8, mps9, mps10],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -146,7 +164,7 @@ const projects = [
     info: "Selected country's GDP & Oil Consumption Data",
     description: `Economic Data Visualization Web Application displaying GDP and oil consumption statistics for various countries via an external API. 
     Includes basic statistical analysis and allows users to store data for selected countries. 
-    Developed as part of a three-member university project team—I was responsible for implementing the application functionality and user interface (UI), 
+    Developed as part of a three-member university project team, in which I was responsible for implementing the application functionality and user interface (UI), 
     while the other team members handled database design and project documentation.`,
     images: [econometrica1, econometrica2, econometrica3],
     stack: [
@@ -162,7 +180,7 @@ const projects = [
     gitHubUrl: "https://github.com/PnSts/SphyWeb",
     info: "Student Management System with Role-Based Access",
     description: `School Student Management Web Application, developed as part of academic coursework. The system supports role-based access control across various user roles and departments. 
-    Created by a team of four, with my primary responsibility focused on user interface (UI) development. Built using JavaServer Pages (JSP).`,
+    Created by a team of four, with my primary responsibility focused on user interface (UI) development. Built using Java Server Pages (JSP).`,
     images: [sphy1, sphy2, sphy3],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
