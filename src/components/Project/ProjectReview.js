@@ -160,7 +160,7 @@ const openFullscreen = (index) => {
         <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
           <button
             onClick={closeFullscreen}
-            className="absolute top-4 right-4 text-[var(--color-second)] text-3xl font-bold"
+            className="absolute top-4 right-4 text-[var(--color-second)] text-xl font-bold"
           >
             ✕
           </button>

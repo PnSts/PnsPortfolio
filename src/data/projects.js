@@ -58,8 +58,8 @@ const projects = [
     frontImage: portfolio1,
     gitHubUrl: "https://github.com/PnSts/PnsPortfolio",
     info: "this.portfolio",
-    description: `A responsive and mobile-friendly Website that highlights my skills and expertise in software/web development, built using modern web technologies. 
-    It delivers a smooth, engaging user experience while showcasing my ability to create functional, accessible and visually appealing websites.`,
+    description: "A responsive and mobile-friendly Website that highlights my skills and expertise in software/web development, built using modern web technologies. "+
+    "It delivers a smooth, engaging user experience while showcasing my ability to create functional, accessible and visually appealing websites.",
     images: [portfolio1],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -76,10 +76,10 @@ const projects = [
     frontImage: reservations1,
     gitHubUrl: "https://github.com/PnSts/TableReservation",
     info: "Restaurant Website with Reservation System (Full Design & Development)",
-    description: `Restaurant Website with Table Reservation System, designed and developed entirely by me, as a course assignment. 
-    I created the UI/UX in Figma (wireframes, prototypes) and handled the front-end development to ensure a responsive, mobile-friendly experience. 
-    The system features a table reservation tool and a smooth, intuitive design focused on performance, accessibility and seamless 
-    device adaptability — while reflecting the restaurant’s brand and user needs.`,
+    description: "Restaurant Website with Table Reservation System, designed and developed entirely by me, as a course assignment. "+
+    "I created the UI/UX in Figma (wireframes, prototypes) and handled the front-end development to ensure a responsive, mobile-friendly experience. "+
+    "The system features a table reservation tool and a smooth, intuitive design focused on performance, accessibility and seamless "+
+    "device adaptability — while reflecting the restaurant’s brand and user needs.",
     images: [reservations1, reservations2, reservations3, reservations4, reservations5, reservations6, reservations7],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -100,7 +100,7 @@ const projects = [
     description:
     "Full-stack solution for organizations to monitor and manage operational and maintenance data. " +
     "The system supports maintenance quality control, tracks key technical and operational metrics, and includes a notification system for critical updates.\n" +
-    "Since 2024, the application has been implemented and remains in active use within an organization.\n\n" +
+    "Since July 2024, the application has been implemented and remains in active use within an organization.\n\n" +
     "Features and functionality:\n" +
     "•  Tabbed interface per Helicopter (all critical operational and maintenance-related information).\n" +
     "•  Flight Hours monitoring.\n" +
@@ -133,9 +133,9 @@ const projects = [
     frontImage: mps1,
     gitHubUrl: "https://github.com/PnSts/Website_MPS",
     info: "Master's Degree Program Management with Role-Based Access (Full Stack Development)",
-    description: `Responsive Web Application simulating a Master's Degree Program management system as a course assignment. 
-    Features distinct user roles — Administrator, Professor, and Student — with functionality for managing users, courses, grades, and student data. 
-    Built using phpMyAdmin for database management and WampServer as the local development environment.`,
+    description: "Responsive Web Application simulating a Master's Degree Program management system as a course assignment. "+
+    "Features distinct user roles — Administrator, Professor, and Student — with functionality for managing users, courses, grades, and student data. "+
+    "Built using phpMyAdmin for database management and WampServer as the local development environment.",
     images: [mps1, mps2, mps3, mps4, mps5, mps6, mps7, mps8, mps9, mps10],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -162,10 +162,10 @@ const projects = [
     frontImage: econometrica3,
     gitHubUrl: "https://github.com/PnSts/Econometrica",
     info: "Selected country's GDP & Oil Consumption Data",
-    description: `Economic Data Visualization Web Application displaying GDP and oil consumption statistics for various countries via an external API. 
-    Includes basic statistical analysis and allows users to store data for selected countries. 
-    Developed as part of a three-member university project team, in which I was responsible for implementing the application functionality and user interface (UI), 
-    while the other team members handled database design and project documentation.`,
+    description: "Economic Data Visualization Web Application displaying GDP and oil consumption statistics for various countries via an external API. "+
+    "Includes basic statistical analysis and allows users to store data for selected countries. "+
+    "Developed as part of a three-member university project team, in which I was responsible for implementing the application functionality and user interface (UI), "+
+    "while the other team members handled database design and project documentation.",
     images: [econometrica1, econometrica2, econometrica3],
     stack: [
       { name: "Java Swing", src: javaswing },
@@ -179,8 +179,8 @@ const projects = [
     frontImage: sphy1,
     gitHubUrl: "https://github.com/PnSts/SphyWeb",
     info: "Student Management System with Role-Based Access",
-    description: `School Student Management Web Application, developed as part of academic coursework. The system supports role-based access control across various user roles and departments. 
-    Created by a team of four, with my primary responsibility focused on user interface (UI) development. Built using Java Server Pages (JSP).`,
+    description: "School Student Management Web Application, developed as part of academic coursework. The system supports role-based access control across various user roles and departments. "+
+    "Created by a team of four, with my primary responsibility focused on user interface (UI) development. Built using Java Server Pages (JSP).",
     images: [sphy1, sphy2, sphy3],
     stack: [
       { name: "HTML", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
