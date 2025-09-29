@@ -27,7 +27,7 @@ const HeroSection = () => {
             </p>
             <div className="w-full max-sm:flex max-sm:justify-center max-sm:items-center max-sm:mx-auto">
               <HashLink className="button-primary mt-16 inline-block" to="/#contact">
-                Contact with me...
+                Contact me...
               </HashLink>
             </div>
 
