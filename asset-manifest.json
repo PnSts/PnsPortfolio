@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PnsPortfolio/static/css/main.bd458803.css",
-    "main.js": "/PnsPortfolio/static/js/main.d98e0c6a.js",
+    "main.js": "/PnsPortfolio/static/js/main.5e9c953a.js",
     "static/js/453.f54e7ee1.chunk.js": "/PnsPortfolio/static/js/453.f54e7ee1.chunk.js",
     "static/media/dev_image.png": "/PnsPortfolio/static/media/dev_image.3022cb2a1308b56376b2.png",
     "static/media/2.jpg": "/PnsPortfolio/static/media/2.e236c1ceb7e1b4351dd1.jpg",
@@ -70,11 +70,11 @@
     "index.html": "/PnsPortfolio/index.html",
     "static/media/oracle-icon.svg": "/PnsPortfolio/static/media/oracle-icon.f82440275d9a440182db687370714be5.svg",
     "main.bd458803.css.map": "/PnsPortfolio/static/css/main.bd458803.css.map",
-    "main.d98e0c6a.js.map": "/PnsPortfolio/static/js/main.d98e0c6a.js.map",
+    "main.5e9c953a.js.map": "/PnsPortfolio/static/js/main.5e9c953a.js.map",
     "453.f54e7ee1.chunk.js.map": "/PnsPortfolio/static/js/453.f54e7ee1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd458803.css",
-    "static/js/main.d98e0c6a.js"
+    "static/js/main.5e9c953a.js"
   ]
 }
