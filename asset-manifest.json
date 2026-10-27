@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PnsPortfolio/static/css/main.bd458803.css",
-    "main.js": "/PnsPortfolio/static/js/main.9b9a2866.js",
+    "main.js": "/PnsPortfolio/static/js/main.31fe773f.js",
     "static/js/453.f54e7ee1.chunk.js": "/PnsPortfolio/static/js/453.f54e7ee1.chunk.js",
     "static/media/dev_image.png": "/PnsPortfolio/static/media/dev_image.3022cb2a1308b56376b2.png",
     "static/media/heli-tech-app_06.webp": "/PnsPortfolio/static/media/heli-tech-app_06.51b5db77e4cc6ed00c34.webp",
@@ -70,11 +70,11 @@
     "index.html": "/PnsPortfolio/index.html",
     "static/media/oracle-icon.svg": "/PnsPortfolio/static/media/oracle-icon.f82440275d9a440182db687370714be5.svg",
     "main.bd458803.css.map": "/PnsPortfolio/static/css/main.bd458803.css.map",
-    "main.9b9a2866.js.map": "/PnsPortfolio/static/js/main.9b9a2866.js.map",
+    "main.31fe773f.js.map": "/PnsPortfolio/static/js/main.31fe773f.js.map",
     "453.f54e7ee1.chunk.js.map": "/PnsPortfolio/static/js/453.f54e7ee1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd458803.css",
-    "static/js/main.9b9a2866.js"
+    "static/js/main.31fe773f.js"
   ]
 }
