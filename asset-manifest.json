@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/PnsPortfolio/static/css/main.bd458803.css",
-    "main.js": "/PnsPortfolio/static/js/main.5e9c953a.js",
+    "main.js": "/PnsPortfolio/static/js/main.cdeb9ccc.js",
     "static/js/453.f54e7ee1.chunk.js": "/PnsPortfolio/static/js/453.f54e7ee1.chunk.js",
     "static/media/dev_image.png": "/PnsPortfolio/static/media/dev_image.3022cb2a1308b56376b2.png",
-    "static/media/2.jpg": "/PnsPortfolio/static/media/2.e236c1ceb7e1b4351dd1.jpg",
     "static/media/heli-tech-app_06.webp": "/PnsPortfolio/static/media/heli-tech-app_06.51b5db77e4cc6ed00c34.webp",
     "static/media/portfolio_1.jpg": "/PnsPortfolio/static/media/portfolio_1.22a79fe5bb27531845f5.jpg",
     "static/media/heli-tech-app_04.webp": "/PnsPortfolio/static/media/heli-tech-app_04.487db175cf3d38885d6f.webp",
@@ -15,9 +14,9 @@
     "static/media/heli-tech-app_11.webp": "/PnsPortfolio/static/media/heli-tech-app_11.82a44ae8ddebd2a641d2.webp",
     "static/media/heli-tech-app_03.webp": "/PnsPortfolio/static/media/heli-tech-app_03.7c3a1d04aac8502c04c2.webp",
     "static/media/heli-tech-app_02.webp": "/PnsPortfolio/static/media/heli-tech-app_02.6252f9395b621606d7cc.webp",
+    "static/media/econometrica_01.webp": "/PnsPortfolio/static/media/econometrica_01.d028ea29b660933f02b1.webp",
     "static/media/website-mps_05.webp": "/PnsPortfolio/static/media/website-mps_05.bfa8cfb638b67c565e36.webp",
     "static/media/website-mps_10.webp": "/PnsPortfolio/static/media/website-mps_10.ad4330bf6e59f10d7028.webp",
-    "static/media/3.jpg": "/PnsPortfolio/static/media/3.afbc497d88cb054b786a.jpg",
     "static/media/table-reservation_09.webp": "/PnsPortfolio/static/media/table-reservation_09.8656d39c7439e3338b72.webp",
     "static/media/sphy_1.jpg": "/PnsPortfolio/static/media/sphy_1.c07da41df786446bc64d.jpg",
     "static/media/website-mps_09.webp": "/PnsPortfolio/static/media/website-mps_09.f09a98273778759e0b98.webp",
@@ -33,6 +32,7 @@
     "static/media/table-reservation_11.webp": "/PnsPortfolio/static/media/table-reservation_11.b690e0c021e1d084018c.webp",
     "static/media/heli-tech-app_07.webp": "/PnsPortfolio/static/media/heli-tech-app_07.030b3286a9099b8e1ed6.webp",
     "static/media/website-mps_02.webp": "/PnsPortfolio/static/media/website-mps_02.6e468cf825582d8ca459.webp",
+    "static/media/econometrica_03.webp": "/PnsPortfolio/static/media/econometrica_03.b819f0efd064cbc0da52.webp",
     "static/media/my-expenses_14.webp": "/PnsPortfolio/static/media/my-expenses_14.41f5e36ca2ff6cd94627.webp",
     "static/media/website-mps_07.webp": "/PnsPortfolio/static/media/website-mps_07.ef35ab8b89b68ee2a31c.webp",
     "static/media/website-mps_03.webp": "/PnsPortfolio/static/media/website-mps_03.3925a5058e2563d3e138.webp",
@@ -58,7 +58,7 @@
     "static/media/website-mps_08.webp": "/PnsPortfolio/static/media/website-mps_08.54cac11b6fa20fbbb5cf.webp",
     "static/media/table-reservation_08.webp": "/PnsPortfolio/static/media/table-reservation_08.b5d1c9a443021905e02e.webp",
     "static/media/testing-library.svg": "/PnsPortfolio/static/media/testing-library.b7fcd059477f4cca8ddc2e88a4db9bd9.svg",
-    "static/media/1.jpg": "/PnsPortfolio/static/media/1.fa4cc410ee47f6d99217.jpg",
+    "static/media/econometrica_02.webp": "/PnsPortfolio/static/media/econometrica_02.801ca41d545b8f37ded9.webp",
     "static/media/table-reservation_07.webp": "/PnsPortfolio/static/media/table-reservation_07.5a4c30ff2623a50c7a5f.webp",
     "static/media/my-expenses_06.webp": "/PnsPortfolio/static/media/my-expenses_06.1e22f4e183d24707a8bd.webp",
     "static/media/table-reservation_05.webp": "/PnsPortfolio/static/media/table-reservation_05.56333e39e90e5caa6ff2.webp",
@@ -70,11 +70,11 @@
     "index.html": "/PnsPortfolio/index.html",
     "static/media/oracle-icon.svg": "/PnsPortfolio/static/media/oracle-icon.f82440275d9a440182db687370714be5.svg",
     "main.bd458803.css.map": "/PnsPortfolio/static/css/main.bd458803.css.map",
-    "main.5e9c953a.js.map": "/PnsPortfolio/static/js/main.5e9c953a.js.map",
+    "main.cdeb9ccc.js.map": "/PnsPortfolio/static/js/main.cdeb9ccc.js.map",
     "453.f54e7ee1.chunk.js.map": "/PnsPortfolio/static/js/453.f54e7ee1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd458803.css",
-    "static/js/main.5e9c953a.js"
+    "static/js/main.cdeb9ccc.js"
   ]
 }
