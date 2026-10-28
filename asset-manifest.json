@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/PnsPortfolio/static/css/main.bd458803.css",
-    "main.js": "/PnsPortfolio/static/js/main.ca778913.js",
+    "main.js": "/PnsPortfolio/static/js/main.ab696e74.js",
     "static/js/453.f54e7ee1.chunk.js": "/PnsPortfolio/static/js/453.f54e7ee1.chunk.js",
     "static/media/dev_image.png": "/PnsPortfolio/static/media/dev_image.3022cb2a1308b56376b2.png",
     "static/media/heli-tech-app_06.webp": "/PnsPortfolio/static/media/heli-tech-app_06.51b5db77e4cc6ed00c34.webp",
-    "static/media/portfolio_1.jpg": "/PnsPortfolio/static/media/portfolio_1.22a79fe5bb27531845f5.jpg",
+    "static/media/pns-portfolio_03.webp": "/PnsPortfolio/static/media/pns-portfolio_03.0314b238a4a2d95702f4.webp",
     "static/media/heli-tech-app_04.webp": "/PnsPortfolio/static/media/heli-tech-app_04.487db175cf3d38885d6f.webp",
     "static/media/heli-tech-app_14.webp": "/PnsPortfolio/static/media/heli-tech-app_14.d8a817860557dbb7efbe.webp",
     "static/media/heli-tech-app_01.webp": "/PnsPortfolio/static/media/heli-tech-app_01.c0e0deafb885ff7507b3.webp",
@@ -30,6 +30,7 @@
     "static/media/heli-tech-app_08.webp": "/PnsPortfolio/static/media/heli-tech-app_08.641b4f0ddaad6aecfa98.webp",
     "static/media/table-reservation_03.webp": "/PnsPortfolio/static/media/table-reservation_03.4c1148959e0bd99c8095.webp",
     "static/media/table-reservation_11.webp": "/PnsPortfolio/static/media/table-reservation_11.b690e0c021e1d084018c.webp",
+    "static/media/pns-portfolio_02.webp": "/PnsPortfolio/static/media/pns-portfolio_02.47c0d456eafc05a73555.webp",
     "static/media/heli-tech-app_07.webp": "/PnsPortfolio/static/media/heli-tech-app_07.030b3286a9099b8e1ed6.webp",
     "static/media/website-mps_02.webp": "/PnsPortfolio/static/media/website-mps_02.6e468cf825582d8ca459.webp",
     "static/media/econometrica_03.webp": "/PnsPortfolio/static/media/econometrica_03.b819f0efd064cbc0da52.webp",
@@ -42,6 +43,7 @@
     "static/media/website-mps_04.webp": "/PnsPortfolio/static/media/website-mps_04.fbaf856e676a76e4c8d3.webp",
     "static/media/my-expenses_09.webp": "/PnsPortfolio/static/media/my-expenses_09.a246e15e1ceae9195760.webp",
     "static/media/my-expenses_15.webp": "/PnsPortfolio/static/media/my-expenses_15.8f4138d434a390cc65e7.webp",
+    "static/media/pns-portfolio_01.webp": "/PnsPortfolio/static/media/pns-portfolio_01.f2dce18d26431a556562.webp",
     "static/media/my-expenses_08.webp": "/PnsPortfolio/static/media/my-expenses_08.7ecc5340f5beb87e92f1.webp",
     "static/media/website-mps_01.webp": "/PnsPortfolio/static/media/website-mps_01.3dcbc1d6665f56cf1bfe.webp",
     "static/media/primefaces-icon.png": "/PnsPortfolio/static/media/primefaces-icon.aa82a0ee07da9647936d.png",
@@ -70,11 +72,11 @@
     "index.html": "/PnsPortfolio/index.html",
     "static/media/oracle-icon.svg": "/PnsPortfolio/static/media/oracle-icon.f82440275d9a440182db687370714be5.svg",
     "main.bd458803.css.map": "/PnsPortfolio/static/css/main.bd458803.css.map",
-    "main.ca778913.js.map": "/PnsPortfolio/static/js/main.ca778913.js.map",
+    "main.ab696e74.js.map": "/PnsPortfolio/static/js/main.ab696e74.js.map",
     "453.f54e7ee1.chunk.js.map": "/PnsPortfolio/static/js/453.f54e7ee1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd458803.css",
-    "static/js/main.ca778913.js"
+    "static/js/main.ab696e74.js"
   ]
 }
